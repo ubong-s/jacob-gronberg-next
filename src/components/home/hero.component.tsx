@@ -9,7 +9,7 @@ import {
   HeroLeft,
   HeroCTA,
 } from "./hero.styles";
-import { AnimatedImage } from "../_shared/animatedImage";
+import { AnimatedImage } from "../_shared";
 
 export const Hero = () => {
   return (

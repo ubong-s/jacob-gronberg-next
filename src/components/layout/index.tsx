@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Footer } from "./footer";
-import { Header } from "./header";
+import { Footer } from "./footer.component";
+import { Header } from "./header.component";
 import { mediaQueries } from "@/styles";
 
 const LayoutWrap = styled.div`

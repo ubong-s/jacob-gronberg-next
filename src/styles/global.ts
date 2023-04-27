@@ -159,7 +159,7 @@ const bodyStyles = css`
   /* Typography styles start */
   p {
     font-family: ${(props) => props.theme.typography.clashDisplay};
-    line-height: 2rem;
+    line-height: 3rem;
     color: ${(props) => props.theme.colors.default};
     font-weight: 400;
   }

@@ -43,3 +43,24 @@ export const social_list = [
     link: "www.facebook.com",
   },
 ];
+
+export const services_info = [
+  {
+    id: 1,
+    title: "Photoshooting",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
+  {
+    id: 2,
+    title: "Video Editing",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
+  {
+    id: 3,
+    title: "Art Direction",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
+];

@@ -1,4 +1,4 @@
-import { Hero, Layout } from "@/components";
+import { Hero, Layout, Services } from "@/components";
 import Head from "next/head";
 import Image from "next/image";
 <Hero />;
@@ -14,6 +14,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
+        <Services />
       </Layout>
     </>
   );

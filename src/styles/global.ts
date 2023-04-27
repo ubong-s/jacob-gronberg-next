@@ -134,6 +134,10 @@ const resetCss = css`
 const htmlStyles = css`
   font-size: 10px;
   scroll-behavior: smooth;
+
+  * {
+    transform-origin: center center;
+  }
 `;
 /* HTML styles end */
 
@@ -141,13 +145,14 @@ const htmlStyles = css`
 const bodyStyles = css`
   background-color: ${(props) => props.theme.colors.body};
   color: ${(props) => props.theme.colors.default};
-  max-width: 19.2rem;
+  max-width: 192rem;
   font-size: ${(props) => props.theme.sizes.textDefault};
   font-family: ${(props) => props.theme.typography.clashDisplay};
 
   a {
     text-decoration: none;
     cursor: pointer;
+    transition: color 0.3s ease;
   }
 
   /* Typography styles start */
@@ -155,6 +160,7 @@ const bodyStyles = css`
     font-family: ${(props) => props.theme.typography.clashDisplay};
     line-height: 2rem;
     color: ${(props) => props.theme.colors.default};
+    font-weight: 300;
   }
 
   h1,
@@ -165,6 +171,7 @@ const bodyStyles = css`
   h6 {
     font-family: ${(props) => props.theme.typography.clashDisplay};
     margin-bottom: 1rem;
+    font-weight: 400;
   }
 
   /* Typography styles End */

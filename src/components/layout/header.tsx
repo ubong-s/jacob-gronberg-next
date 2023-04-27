@@ -3,19 +3,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { MenuBars } from "../icons";
 import { menu_list, social_list } from "@/constants";
-import {
-  HeaderWrap,
-  Logo,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuFooter,
-} from "./header.styles";
+import { HeaderWrap, Logo, Menu, MenuButton, MenuList } from "./header.styles";
 import gsap from "gsap";
+import { FooterCredits } from "../_shared";
 
 export const Header = () => {
   const menuRef = useRef(null);
-  const hamburgerRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
 
@@ -139,7 +132,7 @@ export const Header = () => {
   return (
     <HeaderWrap>
       <Logo href="/">Jacob Grønberg</Logo>
-      <MenuButton ref={hamburgerRef} onClick={toggleMenu}>
+      <MenuButton onClick={toggleMenu}>
         <MenuBars />
       </MenuButton>
       <Menu ref={menuRef}>
@@ -159,31 +152,9 @@ export const Header = () => {
             </li>
           ))}
         </MenuList>
-
-        <MenuFooter>
-          <ul className="social_list">
-            {social_list.map(({ id, title, link }) => (
-              <li key={id}>
-                <Link href={link}>
-                  <span className="text">{title}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          <div className="credits">
-            <p>
-              © Design by{" "}
-              <Link href="http://www.gola.io" target="_blank">
-                Pawel Gola
-              </Link>{" "}
-              -- Developed by{" "}
-              <Link href="https://devubong.com/" target="_blank">
-                Ubong Sylvester
-              </Link>
-            </p>
-          </div>
-        </MenuFooter>
+        <div className="footer-wrap">
+          <FooterCredits />
+        </div>
       </Menu>
     </HeaderWrap>
   );

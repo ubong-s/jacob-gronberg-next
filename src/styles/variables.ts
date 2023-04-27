@@ -24,7 +24,7 @@ export const sizes = {
 export const colors = {
   default: "#101010",
   primary: "#DB574D",
-  muted: "rgba(16, 16, 16, 0.6)",
+  muted: "rgba(16, 16, 16, 0.1)",
   white: "#FFFFFF",
   black: "#000000",
   body: "#EEEDEE",

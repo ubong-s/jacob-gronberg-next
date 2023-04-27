@@ -6,13 +6,13 @@ import { keyframes } from "styled-components";
 export const HeaderWrap = styled.header`
   position: sticky;
   top: 0;
-  background-color: ${(props) => props.theme.colors.body};
+  /* background-color: ${(props) => props.theme.colors.body}; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 8rem;
   padding: 0 2rem;
-  z-index: 2;
+  z-index: 1000;
 
   ${mediaQueries.desktop} {
     height: 12.5rem;

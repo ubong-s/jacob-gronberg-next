@@ -85,7 +85,7 @@ export const Header = () => {
           0.5
         )
         .from(
-          "a .text span",
+          " .text span",
           {
             y: "100%",
             opacity: 0,
@@ -96,7 +96,7 @@ export const Header = () => {
           0.7
         )
         .from(
-          ".social_list li",
+          ".footer-wrap .social__list li",
           {
             y: "100%",
             opacity: 0,
@@ -107,7 +107,7 @@ export const Header = () => {
           0.7
         )
         .from(
-          ".credits",
+          ".footer-wrap .credits",
           {
             y: "100%",
             opacity: 0,

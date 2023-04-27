@@ -153,6 +153,7 @@ const bodyStyles = css`
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease;
+    color: ${(props) => props.theme.colors.default};
   }
 
   /* Typography styles start */
@@ -160,7 +161,7 @@ const bodyStyles = css`
     font-family: ${(props) => props.theme.typography.clashDisplay};
     line-height: 2rem;
     color: ${(props) => props.theme.colors.default};
-    font-weight: 300;
+    font-weight: 400;
   }
 
   h1,
@@ -170,8 +171,24 @@ const bodyStyles = css`
   h5,
   h6 {
     font-family: ${(props) => props.theme.typography.clashDisplay};
+    color: ${(props) => props.theme.colors.primary};
     margin-bottom: 1rem;
     font-weight: 400;
+  }
+
+  h1 {
+    font-size: 7.5rem;
+    line-height: 7.5rem;
+
+    ${mediaQueries.tablet} {
+      font-size: 12rem;
+      line-height: 11rem;
+    }
+
+    ${mediaQueries.desktop} {
+      font-size: 20rem;
+      line-height: 18rem;
+    }
   }
 
   /* Typography styles End */
@@ -195,6 +212,9 @@ const bodyStyles = css`
 
 /* Global styles start */
 export const GlobalStyle = createGlobalStyle`
+
+
+
   ${resetCss}
 
   html {

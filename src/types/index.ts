@@ -18,3 +18,16 @@ export interface TestimonialProps {
   fullQuote: string;
   role: string;
 }
+
+export interface ExhibitionProps {
+  id: string;
+  imageUrl: string;
+  location: string;
+  venue: string;
+  year: number;
+  day: number;
+  month: string;
+  headline: string;
+  description: string;
+  status: "upcoming" | "completed";
+}

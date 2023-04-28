@@ -1,4 +1,9 @@
-import { LinkProps, ServiceProps, TestimonialProps } from "@/types";
+import {
+  ExhibitionProps,
+  LinkProps,
+  ServiceProps,
+  TestimonialProps,
+} from "@/types";
 
 export const menu_list: LinkProps[] = [
   {
@@ -70,7 +75,7 @@ export const services_info: ServiceProps[] = [
 export const testimonials: TestimonialProps[] = [
   {
     id: "michelle_lindstrom",
-    image: "/images/michelle_lindstrøm.png",
+    image: "/images/testimonials/michelle_lindstrøm.png",
     name: "Michelle Lindstrøm",
     highlight: "I Really Enjoyed Working With Jacob",
     fullQuote:
@@ -79,7 +84,7 @@ export const testimonials: TestimonialProps[] = [
   },
   {
     id: "jannis_jackson",
-    image: "/images/jannis_jackson.png",
+    image: "/images/testimonials/jannis_jackson.png",
     name: "Jannis Jackson",
     highlight: "I Really Enjoyed Working With Jacob",
     fullQuote:
@@ -88,11 +93,93 @@ export const testimonials: TestimonialProps[] = [
   },
   {
     id: "daniela_berg",
-    image: "/images/daniela_berg.png",
+    image: "/images/testimonials/daniela_berg.png",
     name: "Daniela Berg",
     highlight: "I Really Enjoyed Working With Jacob",
     fullQuote:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
     role: "Video Editing",
+  },
+];
+
+export const exhibitions_data: ExhibitionProps[] = [
+  {
+    id: "independent-beauty",
+    imageUrl: "/images/exhibitions/independent-beauty.png",
+    location: "New York",
+    venue: "Townhall",
+    year: 2023,
+    day: 16,
+    month: "Jun",
+    headline: "Independent Beauty",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    status: "upcoming",
+  },
+  {
+    id: "in-humanity-we-trust",
+    imageUrl: "/images/exhibitions/in-humanity-we-trust.png",
+    location: "Berlin",
+    venue: "Kunsthalle",
+    year: 2023,
+    day: 2,
+    month: "May",
+    headline: "In Humanity We Trust",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+    status: "upcoming",
+  },
+  {
+    id: "berlin-at-night",
+    imageUrl: "/images/exhibitions/berlin-at-night.png",
+    location: "Berlin",
+    venue: "Kunsthalle",
+    year: 2023,
+    day: 24,
+    month: "Jul",
+    headline: "Berlin at Night",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.",
+    status: "upcoming",
+  },
+
+  {
+    id: "solo-beauty",
+    imageUrl: "/images/exhibitions/solo-beauty.png",
+    location: "New York",
+    venue: "Townhall",
+    year: 2022,
+    day: 16,
+    month: "Jun",
+    headline: "Solo Beauty",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    status: "completed",
+  },
+  {
+    id: "humanity-is-not-lost",
+    imageUrl: "/images/exhibitions/humanity-is-not-lost.png",
+    location: "Berlin",
+    venue: "Kunsthalle",
+    year: 2022,
+    day: 2,
+    month: "May",
+    headline: "Humanity is not lost",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+    status: "completed",
+  },
+  {
+    id: "berlin-at-morning",
+    imageUrl: "/images/exhibitions/berlin-at-morning.png",
+    location: "Berlin",
+    venue: "Kunsthalle",
+    year: 2022,
+    day: 24,
+    month: "Jul",
+    headline: "Berlin at morning",
+    description:
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.",
+    status: "completed",
   },
 ];

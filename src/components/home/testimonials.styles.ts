@@ -5,6 +5,7 @@ export const TestimonialsWrap = styled.section`
   width: 90%;
   max-width: 142rem;
   margin: auto;
+  padding-top: 3rem;
 
   .intro {
     h2 {
@@ -40,6 +41,7 @@ export const TestimonialsWrap = styled.section`
     display: grid;
     grid-template-columns: 0.8fr 1fr;
     gap: 22rem;
+    padding-top: 5rem;
 
     .intro {
       h2 {

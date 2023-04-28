@@ -68,3 +68,32 @@ export const Quote = () => {
     </svg>
   );
 };
+export const VisitLink = () => {
+  return (
+    <svg
+      width="21"
+      height="22"
+      viewBox="0 0 21 22"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M5.02051 16.48L15.6271 5.87338" stroke="#DB574D" />
+      <path d="M6.08105 5.5199H15.9805V15.4194" stroke="#DB574D" />
+    </svg>
+  );
+};
+
+export const ArrowRight = () => {
+  return (
+    <svg
+      width="32"
+      height="16"
+      viewBox="0 0 32 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0.5 8H30.5" stroke="#101010" />
+      <path d="M24 1L31 8L24 15" stroke="#101010" />
+    </svg>
+  );
+};

@@ -1,4 +1,6 @@
-export const menu_list = [
+import { LinkProps, ServiceProps, TestimonialProps } from "@/types";
+
+export const menu_list: LinkProps[] = [
   {
     id: 1,
     title: "Home",
@@ -26,7 +28,7 @@ export const menu_list = [
   },
 ];
 
-export const social_list = [
+export const social_list: LinkProps[] = [
   {
     id: 1,
     title: "twitter",
@@ -44,7 +46,7 @@ export const social_list = [
   },
 ];
 
-export const services_info = [
+export const services_info: ServiceProps[] = [
   {
     id: 1,
     title: "Photoshooting",
@@ -62,5 +64,35 @@ export const services_info = [
     title: "Art Direction",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+  },
+];
+
+export const testimonials: TestimonialProps[] = [
+  {
+    id: "michelle_lindstrom",
+    image: "/images/michelle_lindstrøm.png",
+    name: "Michelle Lindstrøm",
+    highlight: "I Really Enjoyed Working With Jacob",
+    fullQuote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Laoreet sit amet cursus sit amet dictum sit amet justo. ",
+    role: "Photoshoot",
+  },
+  {
+    id: "jannis_jackson",
+    image: "/images/jannis_jackson.png",
+    name: "Jannis Jackson",
+    highlight: "I Really Enjoyed Working With Jacob",
+    fullQuote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra.",
+    role: "Art Direction",
+  },
+  {
+    id: "daniela_berg",
+    image: "/images/daniela_berg.png",
+    name: "Daniela Berg",
+    highlight: "I Really Enjoyed Working With Jacob",
+    fullQuote:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+    role: "Video Editing",
   },
 ];

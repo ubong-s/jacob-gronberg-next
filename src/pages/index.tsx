@@ -1,4 +1,10 @@
-import { CallToAction, Hero, Layout, Services } from "@/components";
+import {
+  CallToAction,
+  Hero,
+  Layout,
+  Services,
+  Testimonials,
+} from "@/components";
 import Head from "next/head";
 import Image from "next/image";
 <Hero />;
@@ -15,6 +21,7 @@ export default function Home() {
       <Layout>
         <Hero />
         <Services />
+        <Testimonials />
         <CallToAction />
       </Layout>
     </>

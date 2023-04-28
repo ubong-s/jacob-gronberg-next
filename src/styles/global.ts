@@ -133,7 +133,7 @@ const resetCss = css`
 /* HTML styles start */
 const htmlStyles = css`
   font-size: 10px;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 
   * {
     transform-origin: center center;
@@ -146,6 +146,7 @@ const bodyStyles = css`
   background-color: ${(props) => props.theme.colors.body};
   color: ${(props) => props.theme.colors.default};
   max-width: 192rem;
+  margin: auto;
   font-size: ${(props) => props.theme.sizes.textDefault};
   font-family: ${(props) => props.theme.typography.clashDisplay};
 
@@ -206,6 +207,13 @@ const bodyStyles = css`
     ${mediaQueries.desktop} {
       font-size: 1.6rem;
     }
+  }
+
+  .dash {
+    display: inline-block;
+    height: 1px;
+    width: 1.5rem;
+    background-color: ${(props) => props.theme.colors.default};
   }
 `;
 /* Body styles end */

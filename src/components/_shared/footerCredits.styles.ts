@@ -22,6 +22,12 @@ export const FooterCreditsWrap = styled.div`
   }
 
   .credits {
+    p {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
     a {
       color: ${(props) => props.theme.colors.primary};
       font-weight: 400;

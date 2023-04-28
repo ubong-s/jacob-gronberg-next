@@ -17,11 +17,11 @@ export const FooterCredits = () => {
       </ul>
       <div className="credits">
         <p>
-          © Design by{" "}
+          © Design by
           <Link href="http://www.gola.io" target="_blank">
             Pawel Gola
-          </Link>{" "}
-          -- Developed by{" "}
+          </Link>
+          <span className="dash"></span>Developed by
           <Link href="https://devubong.com/" target="_blank">
             Ubong Sylvester
           </Link>

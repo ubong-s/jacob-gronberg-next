@@ -15,13 +15,6 @@ export const ServicesWrap = styled.section`
     display: flex;
     align-items: center;
     gap: 1.5rem;
-
-    .dash {
-      display: inline-block;
-      height: 1px;
-      width: 2rem;
-      background-color: ${(props) => props.theme.colors.default};
-    }
   }
 
   ${mediaQueries.desktop} {

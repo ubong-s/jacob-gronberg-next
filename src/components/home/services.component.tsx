@@ -4,7 +4,7 @@ import { Service, ServicesList, ServicesWrap } from "./services.styles";
 
 export const Services = () => {
   return (
-    <ServicesWrap>
+    <ServicesWrap id="services">
       <h2>
         <span className="dash"></span>Services
       </h2>

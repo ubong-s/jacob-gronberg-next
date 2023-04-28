@@ -1,6 +1,6 @@
 import React from "react";
 import { CircularButton } from "./circularButton.component";
-import { CallToActionWrap } from "./callToAction.component.styles";
+import { CallToActionWrap } from "./callToAction.styles";
 
 export const CallToAction: React.FC<{}> = () => {
   return (

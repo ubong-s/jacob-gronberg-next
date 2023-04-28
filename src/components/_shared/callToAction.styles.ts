@@ -30,6 +30,10 @@ export const CallToActionWrap = styled.section`
       text-align: left;
       font-size: 10rem;
       line-height: 10rem;
+
+      span {
+        text-transform: uppercase;
+      }
     }
   }
 `;

@@ -13,6 +13,7 @@ interface AnimatedImageProps {
   height: number;
   width: number;
   identifier: string;
+  start?: number;
 }
 
 export const AnimatedImage: React.FC<AnimatedImageProps> = ({
@@ -21,6 +22,7 @@ export const AnimatedImage: React.FC<AnimatedImageProps> = ({
   height,
   width,
   identifier,
+  start = 500,
 }) => {
   useIsomorphicLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -32,7 +34,7 @@ export const AnimatedImage: React.FC<AnimatedImageProps> = ({
           },
           scrollTrigger: {
             trigger: `.image__wrap__${identifier}`,
-            start: "top-=200",
+            start: `top-=${start}`,
             end: "top",
           },
         })

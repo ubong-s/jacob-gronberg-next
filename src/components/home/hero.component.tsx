@@ -33,8 +33,9 @@ export const Hero = () => {
             width={751}
             height={918}
             identifier="hero_image"
+            start={100}
           />
-          <Link href="#services" className="scroll__down__btn">
+          <Link href="/#services" className="scroll__down__btn">
             <ScrollDownArrow />
             <span>
               Scroll Down <br /> & Explore

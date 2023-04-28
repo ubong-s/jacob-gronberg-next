@@ -1,9 +1,6 @@
 import Image from "next/image";
 import gsap from "gsap";
-import styled from "styled-components";
-import { useRef, useLayoutEffect } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { AnimatedImageWrap } from "./animatedImage.styles";
 

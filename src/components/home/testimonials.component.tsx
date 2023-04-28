@@ -1,8 +1,9 @@
 import React from "react";
 import { TestimonialsWrap, Testimonial } from "./testimonials.styles";
 import { testimonials } from "@/constants";
-import { AnimatedImage } from "../_shared";
+import { AnimatedImage, CustomButton } from "../_shared";
 import { Quote } from "../icons";
+import Link from "next/link";
 
 export const Testimonials: React.FC<{}> = () => {
   return (
@@ -16,6 +17,9 @@ export const Testimonials: React.FC<{}> = () => {
           Worked with Over <span>50 clients</span> <br />
           around the world
         </p>
+        <Link href="/contact">
+          <CustomButton text="Work with me" variant="default" />
+        </Link>
       </div>
 
       <div className="content">

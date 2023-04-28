@@ -12,7 +12,6 @@ export const TestimonialsWrap = styled.section`
       color: ${(props) => props.theme.colors.default};
       font-size: 4.8rem;
       line-height: 4.8rem;
-      margin-bottom: 2rem;
 
       span {
         color: ${(props) => props.theme.colors.primary};
@@ -24,18 +23,23 @@ export const TestimonialsWrap = styled.section`
       font-size: 2.4rem;
       line-height: 2.4rem;
       text-transform: uppercase;
+      margin: 2rem 0 4rem;
 
       span {
         display: inline-block;
         color: ${(props) => props.theme.colors.primary};
       }
     }
+
+    a {
+      display: none;
+    }
   }
 
   ${mediaQueries.desktop} {
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    gap: 6rem;
+    grid-template-columns: 0.8fr 1fr;
+    gap: 22rem;
 
     .intro {
       h2 {
@@ -46,6 +50,10 @@ export const TestimonialsWrap = styled.section`
       p {
         font-size: 3rem;
         line-height: 3rem;
+      }
+
+      a {
+        display: inline-block;
       }
     }
   }

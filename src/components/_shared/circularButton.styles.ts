@@ -29,7 +29,7 @@ export const CircularButtonLink = styled(Link)`
     height: 100%;
     border-radius: 50%;
     border: 2px solid ${(props) => props.theme.colors.primary};
-    transform: scale(1.1) translateX(0.75rem);
+    transform: scale(1.1) translateX(1rem);
     z-index: 1;
   }
 `;

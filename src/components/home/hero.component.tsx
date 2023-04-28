@@ -9,7 +9,7 @@ import {
   HeroLeft,
   HeroCTA,
 } from "./hero.styles";
-import { AnimatedImage } from "../_shared";
+import { AnimatedImage, CircularButton } from "../_shared";
 
 export const Hero = () => {
   return (
@@ -52,9 +52,9 @@ export const Hero = () => {
             />
             <p>Hi, Im Jacob</p>
           </div>
-          <Link href="/contact">
-            work <br /> with me
-          </Link>
+          <div className="btn-control">
+            <CircularButton link="/contact" title="Work With Me" />
+          </div>
         </HeroCTA>
       </HeroWrapInner>
     </HeroWrap>

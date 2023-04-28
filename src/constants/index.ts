@@ -29,7 +29,7 @@ export const menu_list: LinkProps[] = [
   {
     id: 5,
     title: "Contact",
-    link: "/contact",
+    link: "mailto:ubongsly@gmail.com",
   },
 ];
 

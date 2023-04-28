@@ -149,6 +149,7 @@ const bodyStyles = css`
   margin: auto;
   font-size: ${(props) => props.theme.sizes.textDefault};
   font-family: ${(props) => props.theme.typography.clashDisplay};
+  overflow-x: hidden;
 
   a {
     text-decoration: none;

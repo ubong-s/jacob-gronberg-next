@@ -142,6 +142,7 @@ export const Header = () => {
               <Link
                 href={link}
                 className={router.asPath === link ? "active" : ""}
+                onClick={toggleMenu}
               >
                 <span className="num">0{id}</span>
                 <span className="text">

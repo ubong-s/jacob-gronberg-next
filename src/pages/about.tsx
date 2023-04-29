@@ -1,4 +1,11 @@
-import { CallToAction, Layout, Seo } from "@/components";
+import {
+  AboutIntro,
+  CallToAction,
+  Experiences,
+  Layout,
+  Recognitions,
+  Seo,
+} from "@/components";
 import React from "react";
 
 export default function About() {
@@ -7,6 +14,9 @@ export default function About() {
       <Seo title="About" />
 
       <Layout>
+        <AboutIntro />
+        <Experiences />
+        <Recognitions />
         <CallToAction />
       </Layout>
     </>

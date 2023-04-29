@@ -5,6 +5,7 @@ import {
   ServiceProps,
   TestimonialProps,
   ExperienceProps,
+  RecognitionProps,
 } from "@/types";
 
 export const menu_list: LinkProps[] = [
@@ -392,5 +393,26 @@ export const experiences_data: ExperienceProps[] = [
     role: "Art Study",
     company: "Harvard",
     timeline: "Jan 2016 - Sep 2019",
+  },
+];
+
+export const recognitions_data: RecognitionProps[] = [
+  {
+    id: 1,
+    award: "Photography Portfolio ",
+    organisation: "Awwwards",
+    date: "Feb 2022",
+  },
+  {
+    id: 2,
+    award: "Cover Photo",
+    organisation: "Time Magazine",
+    date: "May 2021",
+  },
+  {
+    id: 3,
+    award: "Design Portfolio",
+    organisation: "Awwwards",
+    date: "Dec 2020",
   },
 ];

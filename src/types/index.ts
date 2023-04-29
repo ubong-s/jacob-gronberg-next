@@ -57,3 +57,9 @@ export interface ExperienceProps {
   company: string;
   timeline: string;
 }
+export interface RecognitionProps {
+  id: number;
+  award: string;
+  organisation: string;
+  date: string;
+}

@@ -1,3 +1,4 @@
+export { GenericListItem } from "./genericListItem.component";
 export { Divider } from "./divider.component";
 export { ExhibitionsList } from "./exhibitionsList.component";
 export { SectionHeading } from "./sectionHeaing.components";

@@ -1,13 +1,20 @@
-import { Layout, Seo } from "@/components";
+import {
+  CallToAction,
+  Layout,
+  Listings,
+  ProjectsHeading,
+  Seo,
+} from "@/components";
 import React from "react";
 
 export default function Projects() {
   return (
     <>
       <Seo title="Projects" />
-
       <Layout>
-        <h1>Projects</h1>
+        <ProjectsHeading />
+        <Listings />
+        <CallToAction />
       </Layout>
     </>
   );

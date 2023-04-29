@@ -2,23 +2,7 @@ import { mediaQueries } from "@/styles";
 import Link from "next/link";
 import styled from "styled-components";
 
-export const ProjectsListingWrap = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 0.5fr;
-  align-items: flex-start;
-  gap: 5rem;
-  padding-top: 3rem;
-
-  ${mediaQueries.tablet} {
-    gap: 10rem 15rem;
-  }
-
-  ${mediaQueries.desktop} {
-    padding-top: 5rem;
-    gap: 15rem 29rem;
-  }
-`;
-export const Project = styled(Link)`
+export const ProjectWrap = styled(Link)`
   display: grid;
   text-align: left;
 
@@ -52,7 +36,7 @@ export const Project = styled(Link)`
   ${mediaQueries.desktop} {
     &:nth-of-type(4) {
       margin-top: -35rem;
-      margin-right: 25%;
+      width: 100%;
     }
   }
 `;

@@ -5,4 +5,5 @@ export { CustomButton } from "./customButton.component";
 export { FooterCredits } from "./footerCredits.component";
 export { AnimatedImage } from "./animatedImage.component";
 export { CircularButton } from "./circularButton.component";
-export { ProjectListing } from "./projectListing.component";
+export { Project } from "./project.component";
+export { Exhibition } from "./exhibition.component";

@@ -188,8 +188,12 @@ const bodyStyles = css`
     }
 
     ${mediaQueries.desktop} {
-      font-size: 20rem;
+      font-size: 18rem;
       line-height: 18rem;
+    }
+
+    ${mediaQueries.hd} {
+      font-size: 20rem;
     }
   }
 

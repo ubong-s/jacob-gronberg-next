@@ -5,12 +5,12 @@ export const CallToActionWrap = styled.section`
   width: 90%;
   max-width: 142rem;
   margin: auto;
-  padding: 20rem 0;
+  padding: 10rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
 
   h2 {
     line-height: 8rem;
@@ -24,7 +24,9 @@ export const CallToActionWrap = styled.section`
   }
 
   ${mediaQueries.desktop} {
+    padding: 20rem 0;
     flex-direction: row-reverse;
+    gap: 8rem;
 
     h2 {
       text-align: left;

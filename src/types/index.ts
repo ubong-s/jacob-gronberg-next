@@ -50,3 +50,10 @@ export interface ProjectProps {
   coverImage: string;
   gallery: string[];
 }
+
+export interface ExperienceProps {
+  id: number;
+  role: string;
+  company: string;
+  timeline: string;
+}

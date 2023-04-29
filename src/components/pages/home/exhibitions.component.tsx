@@ -1,10 +1,10 @@
 import React from "react";
-import { ExhibitionsList } from "../_shared/exhibitionsList.component";
+import { ExhibitionsList } from "../../_shared/exhibitionsList.component";
 import { exhibitions_data } from "@/constants";
 import { ExhibitionsWrap } from "./exhibitions.styles";
 import Link from "next/link";
-import { ArrowRight } from "../icons";
-import { SectionHeading } from "../_shared";
+import { ArrowRight } from "../../icons";
+import { SectionHeading } from "../../_shared";
 
 export const ExhibitionsComponent = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionHeading, ExhibitionsList } from "../_shared";
+import { SectionHeading, ExhibitionsList } from "../../_shared";
 import { exhibitions_data } from "@/constants";
 import { ExhibitionsWrap } from "./index.styles";
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { ScrollDownArrow } from "../icons";
+import { ScrollDownArrow } from "../../icons";
 import Link from "next/link";
 import {
   HeroWrap,
@@ -9,7 +9,7 @@ import {
   HeroLeft,
   HeroCTA,
 } from "./hero.styles";
-import { AnimatedImage, CircularButton, ScrollDownButton } from "../_shared";
+import { AnimatedImage, CircularButton, ScrollDownButton } from "../../_shared";
 
 export const Hero = () => {
   return (

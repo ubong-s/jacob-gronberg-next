@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimatedImage, SectionHeading } from "../_shared";
+import { AnimatedImage, SectionHeading } from "../../_shared";
 import {
   LatesWorkListingWrap,
   LatestWorkWrap,

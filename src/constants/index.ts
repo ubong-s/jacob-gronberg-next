@@ -4,6 +4,7 @@ import {
   ProjectProps,
   ServiceProps,
   TestimonialProps,
+  ExperienceProps,
 } from "@/types";
 
 export const menu_list: LinkProps[] = [
@@ -364,5 +365,32 @@ export const projects_data: ProjectProps[] = [
       "/images/projects/sample-4.png",
       "/images/projects/sample-5.png",
     ],
+  },
+];
+
+export const experiences_data: ExperienceProps[] = [
+  {
+    id: 1,
+    role: "Art Director",
+    company: "Art Studio",
+    timeline: "Okt 2020 - Currently",
+  },
+  {
+    id: 2,
+    role: "Jury",
+    company: "Awwwards",
+    timeline: "June 2020",
+  },
+  {
+    id: 3,
+    role: "Photographer & Art director",
+    company: "Freelance",
+    timeline: "Okt 2019 - Sep 2020",
+  },
+  {
+    id: 4,
+    role: "Art Study",
+    company: "Harvard",
+    timeline: "Jan 2016 - Sep 2019",
   },
 ];

@@ -1,7 +1,7 @@
 import React from "react";
 import { projects_data } from "@/constants";
 import { Listing, ListingsWrap } from "./listings.styles";
-import { AnimatedImage } from "../_shared";
+import { AnimatedImage } from "../../_shared";
 import { formatHeadline } from "@/utils/helpers";
 
 export const Listings = () => {

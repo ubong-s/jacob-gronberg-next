@@ -1,8 +1,8 @@
 import React from "react";
 import { TestimonialsWrap, Testimonial } from "./testimonials.styles";
 import { testimonials } from "@/constants";
-import { AnimatedImage, CustomButton } from "../_shared";
-import { Quote } from "../icons";
+import { AnimatedImage, CustomButton } from "../../_shared";
+import { Quote } from "../../icons";
 import Link from "next/link";
 
 export const Testimonials: React.FC<{}> = () => {

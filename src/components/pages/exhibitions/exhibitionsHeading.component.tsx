@@ -1,4 +1,4 @@
-import { ScrollDownButton } from "../_shared";
+import { ScrollDownButton } from "../../_shared";
 import { ExhibitionsHeadingWrap } from "./exhibitionsHeading.styles";
 
 export const ExhibitionsHeading = () => {

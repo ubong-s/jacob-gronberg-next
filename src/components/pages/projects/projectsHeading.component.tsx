@@ -1,6 +1,6 @@
 import React from "react";
 import { ProjectsHeadingWrap } from "./ProjectsHeading.styles";
-import { CircularButton } from "../_shared";
+import { CircularButton } from "../../_shared";
 
 export const ProjectsHeading = () => {
   return (

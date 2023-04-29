@@ -5,7 +5,7 @@ import { SectionHeadingWrap } from "./sectionHeading.styles";
 interface SectionHeadingProps {
   titleLeft: string;
   titleRight: string;
-  link: string;
+  link?: string;
 }
 
 export const SectionHeading = ({
@@ -20,10 +20,12 @@ export const SectionHeading = ({
         <span> {titleRight}</span>
       </h2>
 
-      <Link href={link}>
-        View All
-        <ArrowRight />
-      </Link>
+      {link && (
+        <Link href={link}>
+          View All
+          <ArrowRight />
+        </Link>
+      )}
     </SectionHeadingWrap>
   );
 };

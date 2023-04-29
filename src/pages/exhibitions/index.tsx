@@ -1,4 +1,12 @@
-import { Layout, Seo } from "@/components";
+import {
+  CallToAction,
+  CurrentExhibitions,
+  ExhibitionsHeading,
+  Layout,
+  PastExhibitions,
+  Seo,
+  Divider,
+} from "@/components";
 import React from "react";
 
 export default function Exhibitions() {
@@ -7,7 +15,11 @@ export default function Exhibitions() {
       <Seo title="Exhibitions" />
 
       <Layout>
-        <h1>Exhibitions</h1>
+        <ExhibitionsHeading />
+        <CurrentExhibitions />
+        <Divider />
+        <PastExhibitions />
+        <CallToAction />
       </Layout>
     </>
   );

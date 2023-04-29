@@ -9,7 +9,7 @@ import {
   HeroLeft,
   HeroCTA,
 } from "./hero.styles";
-import { AnimatedImage, CircularButton } from "../_shared";
+import { AnimatedImage, CircularButton, ScrollDownButton } from "../_shared";
 
 export const Hero = () => {
   return (
@@ -35,15 +35,12 @@ export const Hero = () => {
             identifier="hero_image"
             start={100}
           />
-          <Link href="/#services" className="scroll__down__btn">
-            <ScrollDownArrow />
-            <span>
-              Scroll Down <br /> & Explore
-            </span>
-          </Link>
+          <span className="scroll__down">
+            <ScrollDownButton link="/#services" />
+          </span>
         </HeroRight>
         <HeroCTA>
-          <div>
+          <div className="cta__image">
             <AnimatedImage
               src="/images/work_with jacob.png"
               alt="work with jacob gronberg"
@@ -53,7 +50,7 @@ export const Hero = () => {
             />
             <p>Hi, Im Jacob</p>
           </div>
-          <div className="btn-control">
+          <div className="btn__control">
             <CircularButton link="/contact" title="Work With Me" />
           </div>
         </HeroCTA>

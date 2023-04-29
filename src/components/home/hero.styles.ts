@@ -73,19 +73,10 @@ export const HeroRight = styled.div`
     object-position: top;
   }
 
-  .scroll__down__btn {
+  .scroll__down {
     position: absolute;
-    right: 0;
+    right: 20%;
     bottom: -7rem;
-    display: flex;
-    align-items: flex-end;
-    gap: 1rem;
-    text-align: left;
-    line-height: 2.56rem;
-
-    span {
-      margin-bottom: 2rem;
-    }
   }
 
   ${mediaQueries.tablet} {
@@ -96,7 +87,7 @@ export const HeroRight = styled.div`
   }
 
   ${mediaQueries.desktop} {
-    .scroll__down__btn {
+    .scroll__down {
       bottom: -10rem;
       right: 20%;
     }
@@ -114,11 +105,11 @@ export const HeroCTA = styled.div`
   bottom: 0;
   transform: translate(-50%, calc(50% - 1.25rem));
 
-  & > div {
+  .cta__image {
     display: none;
   }
 
-  .btn-control {
+  .btn__control {
   }
 
   ${mediaQueries.desktop} {
@@ -127,7 +118,7 @@ export const HeroCTA = styled.div`
     display: flex;
     align-items: flex-end;
 
-    & > div {
+    .cta__image {
       display: block;
 
       p {
@@ -136,7 +127,7 @@ export const HeroCTA = styled.div`
       }
     }
 
-    .btn-control {
+    .btn__control {
       transform: translate(-5rem, 5rem);
     }
   }

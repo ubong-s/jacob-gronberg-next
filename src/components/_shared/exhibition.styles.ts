@@ -12,6 +12,7 @@ export const SingleExhibitionWrap = styled.div`
 
   &:last-of-type {
     border-bottom: none;
+    padding-bottom: 0;
   }
 
   .date {
@@ -45,7 +46,7 @@ export const SingleExhibitionWrap = styled.div`
   }
 
   ${mediaQueries.desktop} {
-    gap: 6rem;
+    gap: 10rem;
 
     .date {
       text-align: right;

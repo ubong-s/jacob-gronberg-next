@@ -1,3 +1,5 @@
+export { Divider } from "./divider.component";
+export { ExhibitionsList } from "./exhibitionsList.component";
 export { SectionHeading } from "./sectionHeaing.components";
 export { Seo } from "./seo.component";
 export { CallToAction } from "./callToAction.component";
@@ -7,3 +9,4 @@ export { AnimatedImage } from "./animatedImage.component";
 export { CircularButton } from "./circularButton.component";
 export { Project } from "./project.component";
 export { Exhibition } from "./exhibition.component";
+export { ScrollDownButton } from "./scrollDownButton.component";

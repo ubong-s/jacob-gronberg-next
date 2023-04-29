@@ -22,6 +22,7 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
     month,
     headline,
     description,
+    status,
   } = exhibition;
 
   let headlineWordCount = headline.split(" ").length;
@@ -47,10 +48,14 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
           <h3 dangerouslySetInnerHTML={{ __html: formatHeadline(headline) }} />
           <p className="description">{description}</p>
         </Link>
-        <Link className="ticket__link" href="#">
-          Buy Ticket
-          <VisitLink />
-        </Link>
+        {status === "upcoming" ? (
+          <Link className="ticket__link" href="#">
+            Buy Ticket
+            <VisitLink />
+          </Link>
+        ) : (
+          <div className="ticket__link"></div>
+        )}
       </SingleExhibitionTicketInfo>
 
       <div className="date">

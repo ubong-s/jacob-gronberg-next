@@ -1,4 +1,5 @@
 import {
+  AboutHero,
   AboutIntro,
   CallToAction,
   Experiences,
@@ -14,6 +15,7 @@ export default function About() {
       <Seo title="About" />
 
       <Layout>
+        <AboutHero />
         <AboutIntro />
         <Experiences />
         <Recognitions />

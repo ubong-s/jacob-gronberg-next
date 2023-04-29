@@ -1,6 +1,7 @@
 import {
   ExhibitionProps,
   LinkProps,
+  ProjectProps,
   ServiceProps,
   TestimonialProps,
 } from "@/types";
@@ -114,6 +115,10 @@ export const exhibitions_data: ExhibitionProps[] = [
     headline: "Independent Beauty",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    fullDescription:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.  Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span> <span> Nisi porta lorem mollis aliquam ut. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Eget nullam non nisi est sit amet facilisis magna etiam. Et tortor at risus viverra adipiscing at in tellus integer. Mi sit amet mauris commodo quis imperdiet massa.</span>",
+    hours: "Monday to Saturday from 11 pm to 6 pm",
+    address: "Main Street 2, 12101 New York",
     status: "upcoming",
   },
   {
@@ -127,6 +132,10 @@ export const exhibitions_data: ExhibitionProps[] = [
     headline: "In Humanity We Trust",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+    fullDescription:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.  Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span> <span> Nisi porta lorem mollis aliquam ut. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Eget nullam non nisi est sit amet facilisis magna etiam. Et tortor at risus viverra adipiscing at in tellus integer. Mi sit amet mauris commodo quis imperdiet massa.</span>",
+    hours: "Monday to Saturday from 11 pm to 6 pm",
+    address: "Main Street 2, 12101 Berlin",
     status: "upcoming",
   },
   {
@@ -140,6 +149,11 @@ export const exhibitions_data: ExhibitionProps[] = [
     headline: "Berlin at Night",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.",
+
+    fullDescription:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.  Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span> <span> Nisi porta lorem mollis aliquam ut. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Eget nullam non nisi est sit amet facilisis magna etiam. Et tortor at risus viverra adipiscing at in tellus integer. Mi sit amet mauris commodo quis imperdiet massa.</span>",
+    hours: "Monday to Saturday from 11 pm to 6 pm",
+    address: "Main Street 2, 12101 Berlin",
     status: "upcoming",
   },
 
@@ -154,6 +168,10 @@ export const exhibitions_data: ExhibitionProps[] = [
     headline: "Solo Beauty",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    fullDescription:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.  Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span> <span> Nisi porta lorem mollis aliquam ut. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Eget nullam non nisi est sit amet facilisis magna etiam. Et tortor at risus viverra adipiscing at in tellus integer. Mi sit amet mauris commodo quis imperdiet massa.</span>",
+    hours: "Monday to Saturday from 11 pm to 6 pm",
+    address: "Main Street 2, 12101 New York",
     status: "completed",
   },
   {
@@ -167,6 +185,10 @@ export const exhibitions_data: ExhibitionProps[] = [
     headline: "Humanity is not lost",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.",
+    fullDescription:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.  Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span> <span> Nisi porta lorem mollis aliquam ut. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Eget nullam non nisi est sit amet facilisis magna etiam. Et tortor at risus viverra adipiscing at in tellus integer. Mi sit amet mauris commodo quis imperdiet massa.</span>",
+    hours: "Monday to Saturday from 11 pm to 6 pm",
+    address: "Main Street 2, 12101 Berlin",
     status: "completed",
   },
   {
@@ -180,6 +202,167 @@ export const exhibitions_data: ExhibitionProps[] = [
     headline: "Berlin at morning",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.",
+    fullDescription:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.  Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span> <span> Nisi porta lorem mollis aliquam ut. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Eget nullam non nisi est sit amet facilisis magna etiam. Et tortor at risus viverra adipiscing at in tellus integer. Mi sit amet mauris commodo quis imperdiet massa.</span>",
+    hours: "Monday to Saturday from 11 pm to 6 pm",
+    address: "Main Street 2, 12101 Berlin",
     status: "completed",
+  },
+];
+
+export const projects_data: ProjectProps[] = [
+  {
+    id: "dancing-in-the-wild",
+    name: "Dancing In The Wild",
+    description:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.</span> <span>Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span>",
+    details: {
+      year: 2022,
+      day: 8,
+      month: "October",
+      service: "Photo Shooting",
+      client: "Jonathan Åberg",
+      location: "New York",
+    },
+    coverImage: "/images/projects/dancing-in-the-wild.png",
+    gallery: [
+      "/images/projects/sample-1.png",
+      "/images/projects/sample-2.png",
+      "/images/projects/sample-3.png",
+      "/images/projects/sample-4.png",
+      "/images/projects/sample-5.png",
+    ],
+  },
+  {
+    id: "style-and-fashion",
+    name: "Style & Fashion",
+    description:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.</span> <span>Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span>",
+    details: {
+      year: 2022,
+      day: 10,
+      month: "July",
+      service: "Photo Shooting",
+      client: "Jonathan Åberg",
+      location: "Berlin",
+    },
+    coverImage: "/images/projects/style-and-fashion.png",
+    gallery: [
+      "/images/projects/sample-1.png",
+      "/images/projects/sample-2.png",
+      "/images/projects/sample-3.png",
+      "/images/projects/sample-4.png",
+      "/images/projects/sample-5.png",
+    ],
+  },
+  {
+    id: "week-fashion",
+    name: "Week Fashion",
+    description:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.</span> <span>Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span>",
+    details: {
+      year: 2022,
+      day: 8,
+      month: "May",
+      service: "Video Editing",
+      client: "Jonathan Åberg",
+      location: "New York",
+    },
+    coverImage: "/images/projects/week-fashion.png",
+    gallery: [
+      "/images/projects/sample-1.png",
+      "/images/projects/sample-2.png",
+      "/images/projects/sample-3.png",
+      "/images/projects/sample-4.png",
+      "/images/projects/sample-5.png",
+    ],
+  },
+  {
+    id: "one-eye",
+    name: "One Eye",
+    description:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.</span> <span>Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span>",
+    details: {
+      year: 2022,
+      day: 15,
+      month: "March",
+      service: "Photo Shooting",
+      client: "Slamma",
+      location: "New York",
+    },
+    coverImage: "/images/projects/one-eye.png",
+    gallery: [
+      "/images/projects/sample-1.png",
+      "/images/projects/sample-2.png",
+      "/images/projects/sample-3.png",
+      "/images/projects/sample-4.png",
+      "/images/projects/sample-5.png",
+    ],
+  },
+  {
+    id: "be-slient",
+    name: "Be Silent",
+    description:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.</span> <span>Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span>",
+    details: {
+      year: 2022,
+      day: 9,
+      month: "February",
+      service: "Photo Shooting",
+      client: "Buscabulla",
+      location: "New York",
+    },
+    coverImage: "/images/projects/be-slient.png",
+    gallery: [
+      "/images/projects/sample-1.png",
+      "/images/projects/sample-2.png",
+      "/images/projects/sample-3.png",
+      "/images/projects/sample-4.png",
+      "/images/projects/sample-5.png",
+    ],
+  },
+  {
+    id: "cigarette-and-tobacco",
+    name: "Cigarette & Tobacco",
+    description:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.</span> <span>Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span>",
+    details: {
+      year: 2022,
+      day: 8,
+      month: "February",
+      service: "Video Editing",
+      client: "Ibeyi",
+      location: "New York",
+    },
+    coverImage: "/images/projects/cigarette-and-tobacco.png",
+    gallery: [
+      "/images/projects/sample-1.png",
+      "/images/projects/sample-2.png",
+      "/images/projects/sample-3.png",
+      "/images/projects/sample-4.png",
+      "/images/projects/sample-5.png",
+    ],
+  },
+  {
+    id: "wonderful-body",
+    name: "Wonderful Body",
+    description:
+      "<span>Massa vitae tortor condimentum lacinia quis vel eros donec. In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.</span> <span>Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet.</span> <span>Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id aliquet lectus proin. Varius quam quisque id diam vel quam elementum pulvinar.</span>",
+    details: {
+      year: 2022,
+      day: 8,
+      month: "October",
+      service: "Photo Shooting",
+      client: "Jonathan Åberg",
+      location: "New York",
+    },
+    coverImage: "/images/projects/wonderful-body.png",
+    gallery: [
+      "/images/projects/sample-1.png",
+      "/images/projects/sample-2.png",
+      "/images/projects/sample-3.png",
+      "/images/projects/sample-4.png",
+      "/images/projects/sample-5.png",
+    ],
   },
 ];

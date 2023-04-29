@@ -29,5 +29,24 @@ export interface ExhibitionProps {
   month: string;
   headline: string;
   description: string;
+  fullDescription: string;
+  hours: string;
+  address: string;
   status: "upcoming" | "completed";
+}
+
+export interface ProjectProps {
+  id: string;
+  name: string;
+  description: string;
+  details: {
+    year: number;
+    day: number;
+    month: string;
+    service: string;
+    client: string;
+    location: string;
+  };
+  coverImage: string;
+  gallery: string[];
 }

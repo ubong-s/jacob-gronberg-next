@@ -85,6 +85,10 @@ export const ColumnOne = styled.div`
     a {
       font-size: 10rem;
     }
+
+    p {
+      padding-left: 10rem;
+    }
   }
 `;
 

@@ -7,19 +7,7 @@ import {
 } from "./exhibition.styles";
 import Link from "next/link";
 import { VisitLink } from "../icons";
-
-const formatHeadline = (headline: string) => {
-  let words = headline.split(" ");
-  let headlineWordCount = words.length;
-
-  if (headlineWordCount === 1) {
-    return `${headline}`;
-  }
-
-  let firstPart = words.slice(0, words.length - 1).join(" ");
-  let lastPart = words[words.length - 1];
-  return `${firstPart}<span>${lastPart}</span>`;
-};
+import { formatHeadline } from "@/utils/helpers";
 
 export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
   exhibition,

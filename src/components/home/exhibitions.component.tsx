@@ -4,20 +4,16 @@ import { exhibitions_data } from "@/constants";
 import { ExhibitionsWrap } from "./exhibitions.styles";
 import Link from "next/link";
 import { ArrowRight } from "../icons";
+import { SectionHeading } from "../_shared";
 
 export const ExhibitionsComponent = () => {
   return (
     <ExhibitionsWrap>
-      <div className="heading">
-        <h2>
-          Exhibitions<span>{" '22"}</span>
-        </h2>
-
-        <Link href="/exhibitions">
-          View All
-          <ArrowRight />
-        </Link>
-      </div>
+      <SectionHeading
+        titleLeft="Exhibitions"
+        titleRight={`'22`}
+        link="/exhibitions"
+      />
 
       <ExhibitionsList
         exhibitions={exhibitions_data.filter(

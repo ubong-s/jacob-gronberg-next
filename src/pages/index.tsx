@@ -2,6 +2,7 @@ import {
   CallToAction,
   ExhibitionsComponent,
   Hero,
+  LatestWork,
   Layout,
   Services,
   Testimonials,
@@ -22,6 +23,7 @@ export default function Home() {
       <Layout>
         <Hero />
         <Services />
+        <LatestWork />
         <ExhibitionsComponent />
         <Testimonials />
         <CallToAction />

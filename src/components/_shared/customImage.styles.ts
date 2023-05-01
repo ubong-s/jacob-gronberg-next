@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-export const AnimatedImageWrap = styled.div`
+export const CustomImageWrap = styled.div`
   position: relative;
   display: block;
   overflow: hidden;
-  opacity: 0;
 
   .overlay {
     position: absolute;
@@ -15,6 +14,7 @@ export const AnimatedImageWrap = styled.div`
     height: 100%;
     background-color: ${(props) => props.theme.colors.primary};
     z-index: 2;
+    transform: translateY(100%);
   }
 
   img {

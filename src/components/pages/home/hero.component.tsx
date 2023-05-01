@@ -9,7 +9,7 @@ import {
   HeroLeft,
   HeroCTA,
 } from "./hero.styles";
-import { AnimatedImage, CircularButton, ScrollDownButton } from "../../_shared";
+import { CustomImage, CircularButton, ScrollDownButton } from "../../_shared";
 
 export const Hero = () => {
   return (
@@ -27,13 +27,11 @@ export const Hero = () => {
           </div>
         </HeroLeft>
         <HeroRight>
-          <AnimatedImage
+          <CustomImage
             src="/images/hero_image.png"
             alt="jacob gronberg"
             width={751}
             height={918}
-            identifier="hero_image"
-            start={100}
           />
           <span className="scroll__down">
             <ScrollDownButton link="/#services" />
@@ -41,12 +39,11 @@ export const Hero = () => {
         </HeroRight>
         <HeroCTA>
           <div className="cta__image">
-            <AnimatedImage
+            <CustomImage
               src="/images/work_with jacob.png"
               alt="work with jacob gronberg"
               width={180}
               height={180}
-              identifier="work_with_me"
             />
             <p>Hi, Im Jacob</p>
           </div>

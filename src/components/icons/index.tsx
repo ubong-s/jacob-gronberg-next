@@ -68,6 +68,7 @@ export const Quote = () => {
     </svg>
   );
 };
+
 export const VisitLink = () => {
   return (
     <svg
@@ -94,6 +95,21 @@ export const ArrowRight = () => {
     >
       <path d="M0.5 8H30.5" stroke="#101010" />
       <path d="M24 1L31 8L24 15" stroke="#101010" />
+    </svg>
+  );
+};
+
+export const ArrowLeft = () => {
+  return (
+    <svg
+      width="32"
+      height="16"
+      viewBox="0 0 32 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M31.5 8H1.5" stroke="#101010" />
+      <path d="M8 1L1 8L8 15" stroke="#101010" />
     </svg>
   );
 };

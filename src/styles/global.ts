@@ -179,7 +179,7 @@ const bodyStyles = css`
   }
 
   h1 {
-    font-size: 7.5rem;
+    font-size: 6.5rem;
     line-height: 7.5rem;
 
     ${mediaQueries.tablet} {

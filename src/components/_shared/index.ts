@@ -1,3 +1,4 @@
+export { ReturnLink } from "./ReturnLink.component";
 export { GenericListItem } from "./genericListItem.component";
 export { Divider } from "./divider.component";
 export { ExhibitionsList } from "./exhibitionsList.component";
@@ -6,7 +7,7 @@ export { Seo } from "./seo.component";
 export { CallToAction } from "./callToAction.component";
 export { CustomButton } from "./customButton.component";
 export { FooterCredits } from "./footerCredits.component";
-export { AnimatedImage } from "./animatedImage.component";
+export { CustomImage } from "./customImage.component";
 export { CircularButton } from "./circularButton.component";
 export { Project } from "./project.component";
 export { Exhibition } from "./exhibition.component";

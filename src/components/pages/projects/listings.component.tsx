@@ -1,7 +1,7 @@
 import React from "react";
 import { projects_data } from "@/constants";
 import { Listing, ListingsWrap } from "./listings.styles";
-import { AnimatedImage } from "../../_shared";
+import { CustomImage } from "../../_shared";
 import { formatHeadline } from "@/utils/helpers";
 
 export const Listings = () => {
@@ -18,13 +18,7 @@ export const Listings = () => {
           <Listing href={`/projects/${id}`} key={id}>
             <h3 dangerouslySetInnerHTML={{ __html: formatHeadline(name) }} />
 
-            <AnimatedImage
-              src={coverImage}
-              alt={name}
-              height={855}
-              width={700}
-              identifier={id}
-            />
+            <CustomImage src={coverImage} alt={name} height={855} width={700} />
             <p className="location">{location}</p>
             <p className="date">
               {month} {year}

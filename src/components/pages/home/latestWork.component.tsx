@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimatedImage, SectionHeading } from "../../_shared";
+import { CustomImage, SectionHeading } from "../../_shared";
 import {
   LatesWorkListingWrap,
   LatestWorkWrap,
@@ -24,12 +24,11 @@ export const LatestWork = () => {
             <Project href={`/projects/${id}`} key={id}>
               <h3 dangerouslySetInnerHTML={{ __html: formatHeadline(name) }} />
 
-              <AnimatedImage
+              <CustomImage
                 src={coverImage}
                 alt={name}
                 height={855}
                 width={700}
-                identifier={id}
               />
               <p className="location">{location}</p>
               <p className="date">

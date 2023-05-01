@@ -63,3 +63,8 @@ export interface RecognitionProps {
   organisation: string;
   date: string;
 }
+
+export interface ReturnLinkProps {
+  returnLink?: string;
+  returnText?: string;
+}

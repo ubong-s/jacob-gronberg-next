@@ -1,6 +1,6 @@
 import { ExhibitionProps } from "@/types";
 import React from "react";
-import { AnimatedImage } from "./animatedImage.component";
+import { CustomImage } from "./customImage.component";
 import {
   SingleExhibitionWrap,
   SingleExhibitionTicketInfo,
@@ -30,13 +30,7 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
   return (
     <SingleExhibitionWrap>
       <div className="image">
-        <AnimatedImage
-          src={imageUrl}
-          alt={headline}
-          height={230}
-          width={230}
-          identifier={id}
-        />
+        <CustomImage src={imageUrl} alt={headline} height={230} width={230} />
       </div>
 
       <SingleExhibitionTicketInfo>

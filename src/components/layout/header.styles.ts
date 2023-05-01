@@ -12,7 +12,7 @@ export const HeaderWrap = styled.header`
   justify-content: space-between;
   height: 8rem;
   padding: 0 2rem;
-  z-index: 1000;
+  z-index: 10;
 
   ${mediaQueries.desktop} {
     height: 12.5rem;

@@ -8,7 +8,11 @@ interface SeoProps {
 export const Seo = ({ title, description }: SeoProps) => {
   return (
     <Head>
-      <title>{title && `${title} - `}Jacob Grønberg</title>
+      {title ? (
+        <title>{title} - Jacob Grønberg</title>
+      ) : (
+        <title>Jacob Grønberg</title>
+      )}
       <meta
         name="description"
         content={description || "Photographer & Visual Artist"}

@@ -1,6 +1,7 @@
+import { mediaQueries } from "@/styles";
 import styled from "styled-components";
 
-export const ExhibitionIntroWrap = styled.section`
+export const ProjectIntroWrap = styled.section`
   position: relative;
   width: 90%;
   max-width: 142rem;
@@ -15,20 +16,25 @@ export const ExhibitionIntroWrap = styled.section`
 
   .content {
     padding: 5rem 0;
+
     h1 {
       position: relative;
-      margin-bottom: -6rem;
+      margin-top: -4rem;
       z-index: 1;
     }
 
     p {
-      margin-top: 2rem;
       text-transform: uppercase;
     }
 
     .image {
       max-width: 80rem;
       margin: auto;
+      margin-top: 2rem;
     }
+  }
+
+  ${mediaQueries.desktop} {
+    margin-top: -9rem;
   }
 `;

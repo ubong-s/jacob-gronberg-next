@@ -14,7 +14,7 @@ export const CustomImageWrap = styled.div`
     height: 100%;
     background-color: ${(props) => props.theme.colors.primary};
     z-index: 2;
-    transform: translateY(100%);
+    transform: translateY(101%);
   }
 
   img {

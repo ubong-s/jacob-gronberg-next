@@ -20,6 +20,7 @@ export const HeroWrapInner = styled.div`
   position: relative;
   display: grid;
   gap: 5rem;
+  visibility: hidden;
 
   ${mediaQueries.desktop} {
     gap: 0;
@@ -29,6 +30,15 @@ export const HeroWrapInner = styled.div`
 
 export const HeroLeft = styled.div`
   position: relative;
+
+  .heading__wrap,
+  .text__wrap {
+    overflow: hidden;
+
+    span {
+      display: inline-block;
+    }
+  }
 
   p {
     text-transform: uppercase;
@@ -41,6 +51,10 @@ export const HeroLeft = styled.div`
   }
 
   ${mediaQueries.desktop} {
+    .heading__wrap__two {
+      padding-bottom: 3rem;
+    }
+
     p {
       font-size: 6rem;
       line-height: 6.6rem;
@@ -74,6 +88,7 @@ export const HeroRight = styled.div`
   }
 
   .scroll__down {
+    display: inline-block;
     position: absolute;
     right: 20%;
     bottom: -7rem;

@@ -6,6 +6,7 @@ export const ServicesWrap = styled.section`
   max-width: 142rem;
   margin: auto;
   padding: 5rem 0;
+  visibility: hidden;
 
   h2 {
     text-transform: capitalize;
@@ -36,6 +37,7 @@ export const Service = styled.div`
   gap: 8rem;
   padding: 3rem 0;
   border-bottom: 1px solid ${(props) => props.theme.colors.muted};
+  visibility: hidden;
 
   &:last-of-type {
     border-bottom: none;

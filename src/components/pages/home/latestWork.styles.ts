@@ -7,6 +7,7 @@ export const LatestWorkWrap = styled.section`
   margin-right: 142rem;
   margin: auto;
   padding: 6rem 0;
+  visibility: hidden;
 
   ${mediaQueries.desktop} {
     padding: 10rem 0;
@@ -34,9 +35,12 @@ export const LatesWorkListingWrap = styled.div`
 export const Project = styled(Link)`
   display: grid;
   text-align: left;
+  visibility: hidden;
 
   h3 {
     font-size: 3rem;
+    line-height: 3rem;
+    overflow: hidden;
     text-transform: capitalize;
     color: ${(props) => props.theme.colors.default};
 

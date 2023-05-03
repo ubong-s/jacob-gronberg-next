@@ -13,10 +13,16 @@ export const SectionHeadingWrap = styled.div`
     line-height: 5rem;
     color: ${(props) => props.theme.colors.default};
     text-transform: uppercase;
+    overflow: hidden;
 
     span {
-      color: ${(props) => props.theme.colors.primary};
-      text-transform: capitalize;
+      display: inline-block;
+
+      &.right {
+        color: ${(props) => props.theme.colors.primary};
+        text-transform: capitalize;
+        margin-left: 1rem;
+      }
     }
   }
 
@@ -45,6 +51,7 @@ export const SectionHeadingWrap = styled.div`
   ${mediaQueries.desktop} {
     h2 {
       font-size: 10rem;
+      line-height: 10rem;
     }
   }
 `;

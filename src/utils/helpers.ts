@@ -13,5 +13,5 @@ export const formatHeadline = (headline: string) => {
 
   let firstPart = words.slice(0, words.length - 1).join(" ");
   let lastPart = words[words.length - 1];
-  return `${firstPart}<span>${lastPart}</span>`;
+  return `${firstPart} <span>${lastPart}</span>`;
 };

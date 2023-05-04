@@ -11,14 +11,20 @@ export const AboutHeroWrap = styled.section`
   align-items: center;
   text-align: center;
   padding: 3rem 0;
+  visibility: hidden;
 
   h1 {
+    overflow: hidden;
+
     span {
       display: block;
-      font-size: 4rem;
-      text-transform: uppercase;
-      color: ${(props) => props.theme.colors.default};
-      line-height: 4rem;
+
+      &.small__text {
+        font-size: 4rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: ${(props) => props.theme.colors.default};
+      }
     }
   }
 
@@ -42,9 +48,12 @@ export const AboutHeroWrap = styled.section`
         right: 5%;
         top: 50%;
         transform: translateY(-20%);
+        line-height: 20rem;
 
         span {
-          margin-left: -5rem;
+          &.small__text {
+            margin-left: -5rem;
+          }
         }
       }
     }

@@ -9,13 +9,11 @@ export const ProjectIntroWrap = styled.section`
   text-align: center;
 
   .return__link {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-top: 5rem;
   }
 
   .content {
-    padding: 5rem 0;
+    padding: 0 0 5rem;
 
     h1 {
       position: relative;
@@ -34,7 +32,27 @@ export const ProjectIntroWrap = styled.section`
     }
   }
 
+  ${mediaQueries.tablet} {
+    .content {
+      h1 {
+        margin-top: -6rem;
+      }
+    }
+  }
+
   ${mediaQueries.desktop} {
-    margin-top: -9rem;
+    margin-top: -7rem;
+
+    .return__link {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .content {
+      h1 {
+        margin-top: -10rem;
+      }
+    }
   }
 `;

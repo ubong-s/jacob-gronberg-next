@@ -5,9 +5,9 @@ export const SingleExhibitionWrap = styled.div`
   position: relative;
   display: grid;
   grid-template-columns: 10rem 1fr;
+  align-items: flex-start;
   gap: 3rem;
   padding: 5rem 0;
-  border-bottom: 1px solid ${(props) => props.theme.colors.muted};
   border-bottom: 1px solid ${(props) => props.theme.colors.muted};
   visibility: hidden;
 
@@ -18,7 +18,7 @@ export const SingleExhibitionWrap = styled.div`
 
   .date {
     position: absolute;
-    top: calc(50% + 5rem);
+    top: calc(50% + 10rem);
     left: 0;
     transform: translateY(-50%);
     display: flex;
@@ -83,7 +83,6 @@ export const SingleExhibitionTicketInfo = styled.div`
       display: inline-block;
       color: ${(props) => props.theme.colors.primary};
       text-transform: capitalize;
-      margin-left: 1rem;
     }
   }
 

@@ -1,3 +1,4 @@
+import { mediaQueries } from "@/styles";
 import styled from "styled-components";
 
 export const ExhibitionIntroWrap = styled.section`
@@ -9,6 +10,7 @@ export const ExhibitionIntroWrap = styled.section`
 
   .return__link {
     position: absolute;
+    top: 2.5rem;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -29,6 +31,16 @@ export const ExhibitionIntroWrap = styled.section`
     .image {
       max-width: 80rem;
       margin: auto;
+    }
+  }
+
+  ${mediaQueries.desktop} {
+    .return__link {
+      top: 0;
+    }
+
+    .content {
+      margin-top: -7rem;
     }
   }
 `;

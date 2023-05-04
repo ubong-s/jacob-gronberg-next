@@ -17,6 +17,7 @@ export const ListingsWrap = styled.section`
     "empty four"
     "three five"
     "six seven";
+  visibility: hidden;
 
   ${mediaQueries.desktop} {
     padding-top: 8rem;

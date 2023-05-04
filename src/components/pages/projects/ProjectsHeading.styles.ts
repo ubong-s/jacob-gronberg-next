@@ -11,9 +11,15 @@ export const ProjectsHeadingWrap = styled.section`
   text-align: center;
   align-items: center;
   padding: 3rem 0;
+  visibility: hidden;
 
   h1 {
     margin-bottom: 3rem;
+    overflow: hidden;
+
+    span {
+      display: inline-block;
+    }
   }
 
   p {
@@ -24,6 +30,10 @@ export const ProjectsHeadingWrap = styled.section`
     flex-direction: row;
     text-align: left;
     gap: 4rem;
+
+    h1 {
+      line-height: 20rem;
+    }
   }
 
   ${mediaQueries.large} {

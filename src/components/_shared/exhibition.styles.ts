@@ -9,6 +9,7 @@ export const SingleExhibitionWrap = styled.div`
   padding: 5rem 0;
   border-bottom: 1px solid ${(props) => props.theme.colors.muted};
   border-bottom: 1px solid ${(props) => props.theme.colors.muted};
+  visibility: hidden;
 
   &:last-of-type {
     border-bottom: none;
@@ -34,7 +35,7 @@ export const SingleExhibitionWrap = styled.div`
   }
 
   ${mediaQueries.tablet} {
-    grid-template-columns: auto 1fr 80px;
+    grid-template-columns: 25rem 1fr 80px;
     align-items: center;
 
     .date {

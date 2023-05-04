@@ -11,9 +11,11 @@ export const ExhibitionsHeadingWrap = styled.section`
   text-align: center;
   align-items: center;
   padding: 3rem 0;
+  visibility: hidden;
 
   h1 {
     margin-bottom: 3rem;
+    overflow: hidden;
   }
 
   p {
@@ -23,5 +25,9 @@ export const ExhibitionsHeadingWrap = styled.section`
 
   ${mediaQueries.desktop} {
     gap: 7rem;
+
+    h1 {
+      line-height: 20rem;
+    }
   }
 `;

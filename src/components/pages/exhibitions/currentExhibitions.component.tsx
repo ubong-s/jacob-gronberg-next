@@ -6,7 +6,7 @@ import { ExhibitionsWrap } from "./index.styles";
 export const CurrentExhibitions = () => {
   return (
     <ExhibitionsWrap id="exhibitions">
-      <h2>
+      <h2 className="heading__exhibition">
         Current <span>exhibitions</span>
       </h2>
       <ExhibitionsList

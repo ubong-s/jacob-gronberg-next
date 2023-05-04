@@ -1,5 +1,5 @@
 import { ExhibitionProps } from "@/types";
-import React from "react";
+import React, { useRef } from "react";
 import { CustomImage } from "./customImage.component";
 import {
   SingleExhibitionWrap,
@@ -7,7 +7,11 @@ import {
 } from "./exhibition.styles";
 import Link from "next/link";
 import { VisitLink } from "../icons";
-import { formatHeadline } from "@/utils/helpers";
+import { formatHeadline, useIsomorphicLayoutEffect } from "@/utils/helpers";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
   exhibition,
@@ -24,14 +28,73 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
     description,
     status,
   } = exhibition;
+  const exhibitionContainer = useRef(null);
 
-  let headlineWordCount = headline.split(" ").length;
+  useIsomorphicLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap
+        .timeline({
+          defaults: {
+            opacity: 0,
+            ease: "ease",
+          },
+          scrollTrigger: {
+            trigger: exhibitionContainer.current,
+            start: "top center+=100px",
+            toggleActions: "play none none reverse",
+          },
+        })
+        .to(exhibitionContainer.current, {
+          autoAlpha: 1,
+        })
+        .to(
+          ".image__wrap > .overlay",
+          {
+            xPercent: 0,
+            autoAlpha: 1,
+          },
+          "<"
+        )
+        .to(".image__wrap > .overlay", {
+          translateX: "101%",
+          autoAlpha: 1,
+        })
+        .from(
+          ".image__wrap > .image",
+          {
+            scale: 1.2,
+          },
+          "<"
+        )
+        .from(
+          ".content",
+          {
+            x: -20,
+          },
+          0.5
+        )
+        .from(
+          ".ticket__link",
+          {
+            x: -20,
+          },
+          0.75
+        )
+        .from(
+          ".date",
+          {
+            x: -20,
+          },
+          1
+        );
+    }, exhibitionContainer);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
-    <SingleExhibitionWrap>
-      <div className="image">
-        <CustomImage src={imageUrl} alt={headline} height={230} width={230} />
-      </div>
+    <SingleExhibitionWrap ref={exhibitionContainer}>
+      <CustomImage src={imageUrl} alt={headline} height={230} width={230} />
 
       <SingleExhibitionTicketInfo>
         <Link href={`/exhibitions/${id}`} className="content">

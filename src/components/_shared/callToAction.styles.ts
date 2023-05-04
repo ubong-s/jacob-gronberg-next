@@ -11,31 +11,34 @@ export const CallToActionWrap = styled.section`
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  visibility: hidden;
 
   h2 {
     line-height: 8rem;
     font-size: 8rem;
     text-align: center;
+    overflow-y: hidden;
 
     span {
       display: block;
-      color: ${(props) => props.theme.colors.default};
+
+      &.uppercase {
+        color: ${(props) => props.theme.colors.default};
+        text-transform: uppercase;
+      }
     }
   }
 
   ${mediaQueries.desktop} {
     padding: 20rem 0;
     flex-direction: row-reverse;
+    justify-content: center;
     gap: 8rem;
 
     h2 {
       text-align: left;
       font-size: 10rem;
       line-height: 10rem;
-
-      span {
-        text-transform: uppercase;
-      }
     }
   }
 `;

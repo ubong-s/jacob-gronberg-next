@@ -73,8 +73,6 @@ export const LatestWork = () => {
     return () => ctx.revert();
   }, []);
 
-  useIsomorphicLayoutEffect(() => {}, []);
-
   const addProjectToRefs = (el: any) => {
     if (el && !projectRefs.current.includes(el)) {
       projectRefs.current.push(el);

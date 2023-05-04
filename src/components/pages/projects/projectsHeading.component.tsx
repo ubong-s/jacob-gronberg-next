@@ -1,12 +1,47 @@
-import React from "react";
+import React, { useRef } from "react";
 import { ProjectsHeadingWrap } from "./ProjectsHeading.styles";
 import { CircularButton } from "../../_shared";
+import { useIsomorphicLayoutEffect } from "@/utils/helpers";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const ProjectsHeading = () => {
+  const container = useRef(null);
+
+  useIsomorphicLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap
+        .timeline({
+          defaults: {
+            opacity: 0,
+            ease: "ease",
+          },
+        })
+        .to(container.current, {
+          autoAlpha: 1,
+        })
+        .from("h1 span", {
+          y: 20,
+        })
+        .from("p", {
+          y: 20,
+        })
+        .from("a", {
+          x: -20,
+        });
+    }, container);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <ProjectsHeadingWrap>
+    <ProjectsHeadingWrap ref={container}>
       <div>
-        <h1>Projects</h1>
+        <h1>
+          <span>Projects</span>
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
           perspiciatis facilis iste dolorem asperiores, cumque fugit quis aut

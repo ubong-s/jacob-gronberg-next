@@ -6,6 +6,7 @@ export const TestimonialsWrap = styled.section`
   max-width: 142rem;
   margin: auto;
   padding-top: 3rem;
+  visibility: hidden;
 
   .intro {
     h2 {
@@ -13,6 +14,7 @@ export const TestimonialsWrap = styled.section`
       color: ${(props) => props.theme.colors.default};
       font-size: 4.8rem;
       line-height: 4.8rem;
+      overflow: hidden;
 
       span {
         color: ${(props) => props.theme.colors.primary};
@@ -67,6 +69,7 @@ export const Testimonial = styled.div`
   gap: 4rem;
   padding: 5rem 0;
   border-bottom: 1px solid ${(props) => props.theme.colors.muted};
+  visibility: hidden;
 
   &:last-of-type {
     border-bottom: none;

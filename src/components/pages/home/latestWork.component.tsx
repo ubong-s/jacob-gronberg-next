@@ -98,6 +98,7 @@ export const LatestWork = ({ projects }: { projects: ProjectProps[] }) => {
               key={_id}
               ref={addProjectToRefs}
               id={`project__${index}`}
+              className="project__card"
             >
               <h3 dangerouslySetInnerHTML={{ __html: formatHeadline(name) }} />
 

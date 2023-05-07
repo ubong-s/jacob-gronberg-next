@@ -5,6 +5,7 @@ import {
   Experiences,
   Layout,
   Recognitions,
+  ResourcesFailedFetch,
   Seo,
 } from "@/components";
 import React from "react";
@@ -22,6 +23,10 @@ export default function About({
     experiences,
     recognitions,
   } = aboutPageData;
+
+  if (!aboutPageData) {
+    return <ResourcesFailedFetch resources="about" />;
+  }
 
   return (
     <>

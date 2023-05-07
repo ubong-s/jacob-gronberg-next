@@ -21,7 +21,7 @@ export const Listings = ({ projects }: { projects: ProjectProps[] }) => {
         scrollTrigger: {
           trigger: listingsContainer.current,
           start: "top center+=100px",
-          toggleActions: "play none none reverse",
+          toggleActions: "play none none none",
         },
       });
 
@@ -36,7 +36,7 @@ export const Listings = ({ projects }: { projects: ProjectProps[] }) => {
               id: `listing__${index}`,
               trigger: listing,
               start: "top 50%",
-              toggleActions: "play none none reverse",
+              toggleActions: "play none none none",
             },
           })
           .to(listing, {
@@ -98,6 +98,7 @@ export const Listings = ({ projects }: { projects: ProjectProps[] }) => {
             key={_id}
             ref={addListingToRefs}
             id={`listing__${index}`}
+            className="project__card"
           >
             <h3 dangerouslySetInnerHTML={{ __html: formatHeadline(name) }} />
 

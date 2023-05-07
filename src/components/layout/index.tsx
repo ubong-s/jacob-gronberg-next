@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Footer } from "./footer.component";
 import { Header } from "./header.component";
 import { GlobalStyle, mediaQueries } from "@/styles";
+import { CustomCursor } from "../_shared";
 
 const LayoutWrap = styled.div`
   main {
@@ -20,6 +21,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({
     <>
       <GlobalStyle />
       <LayoutWrap>
+        <CustomCursor />
         <Header />
         <main>{children}</main>
         <Footer />

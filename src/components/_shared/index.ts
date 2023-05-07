@@ -1,4 +1,4 @@
-export { ReturnLink } from "./ReturnLink.component";
+export { ReturnLink } from "./returnLink.component";
 export { GenericListItem } from "./genericListItem.component";
 export { Divider } from "./divider.component";
 export { ExhibitionsList } from "./exhibitionsList.component";
@@ -12,3 +12,5 @@ export { CircularButton } from "./circularButton.component";
 export { Project } from "./project.component";
 export { Exhibition } from "./exhibition.component";
 export { ScrollDownButton } from "./scrollDownButton.component";
+export { ResourceNotFound } from "./resourceNotFound.component";
+export { ResourcesFailedFetch } from "./resourcesFailedFetch.component";

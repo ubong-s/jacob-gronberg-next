@@ -1,7 +1,5 @@
 import {
-  ExhibitionProps,
   LinkProps,
-  ProjectProps,
   ServiceProps,
   TestimonialProps,
   ExperienceProps,
@@ -36,21 +34,39 @@ export const menu_list: LinkProps[] = [
   },
 ];
 
+export const info_list: LinkProps[] = [
+  {
+    id: 1,
+    title: "Styleguide",
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "Licensing",
+    link: "#",
+  },
+  {
+    id: 3,
+    title: "Changelog",
+    link: "#",
+  },
+];
+
 export const social_list: LinkProps[] = [
   {
     id: 1,
     title: "twitter",
-    link: "www.twitter.com",
+    link: "https://www.twitter.com",
   },
   {
     id: 2,
     title: "instagram",
-    link: "www.instagram.com",
+    link: "https://www.instagram.com",
   },
   {
     id: 3,
     title: "facebook",
-    link: "www.facebook.com",
+    link: "https://www.facebook.com",
   },
 ];
 
@@ -105,7 +121,7 @@ export const testimonials: TestimonialProps[] = [
   },
 ];
 
-export const exhibitions_data: ExhibitionProps[] = [
+export const exhibitions_data = [
   {
     id: "independent-beauty",
     imageUrl: "/images/exhibitions/independent-beauty.png",
@@ -212,7 +228,7 @@ export const exhibitions_data: ExhibitionProps[] = [
   },
 ];
 
-export const projects_data: ProjectProps[] = [
+export const projects_data = [
   {
     id: "dancing-in-the-wild",
     name: "Dancing In The Wild",

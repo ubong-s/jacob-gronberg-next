@@ -6,6 +6,7 @@ import {
   PastExhibitions,
   Seo,
   Divider,
+  ResourcesFailedFetch,
 } from "@/components";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
@@ -43,10 +44,14 @@ export default function Exhibitions({
 
     return () => ctx.revert();
   }, []);
+
+  if (!exhibitions) {
+    return <ResourcesFailedFetch resources="exhibitions" />;
+  }
+
   return (
     <>
       <Seo title="Exhibitions" />
-
       <Layout>
         <ExhibitionsHeading />
         <div ref={exhibitionRef}>

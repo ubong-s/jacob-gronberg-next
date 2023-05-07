@@ -3,6 +3,7 @@ import {
   ExhibitionContent,
   ExhibitionIntro,
   Layout,
+  ResourceNotFound,
   Seo,
 } from "@/components";
 import { GetServerSidePropsContext } from "next";
@@ -14,6 +15,9 @@ export default function SingleExhibitionPage({
 }: {
   exhibition: ExhibitionProps;
 }) {
+  if (!exhibition) {
+    return <ResourceNotFound resource="exhibition" />;
+  }
   return (
     <>
       <Seo title={exhibition.name} />

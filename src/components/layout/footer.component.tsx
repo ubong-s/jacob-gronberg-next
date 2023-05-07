@@ -1,7 +1,7 @@
 import React from "react";
 import { FooterCredits } from "../_shared";
 import Link from "next/link";
-import { menu_list } from "@/constants";
+import { menu_list, info_list } from "@/constants";
 import { useRouter } from "next/router";
 import {
   ColumnOne,
@@ -41,7 +41,7 @@ export const Footer = () => {
           <ColumnThree className="column ">
             <h4>Info</h4>
             <ul>
-              {menu_list.map(({ id, title, link }) => (
+              {info_list.map(({ id, title, link }) => (
                 <li key={id}>
                   <Link
                     href={link}

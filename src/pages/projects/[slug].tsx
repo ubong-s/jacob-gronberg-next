@@ -4,6 +4,7 @@ import {
   ProjectContent,
   ProjectGallery,
   ProjectIntro,
+  ResourceNotFound,
   Seo,
 } from "@/components";
 import { projects_data } from "@/constants";
@@ -16,7 +17,9 @@ export default function SingleProjectPage({
 }: {
   project: ProjectProps;
 }) {
-  console.log(project);
+  if (!project) {
+    return <ResourceNotFound resource="project" />;
+  }
 
   return (
     <>

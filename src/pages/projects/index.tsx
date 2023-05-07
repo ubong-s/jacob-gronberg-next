@@ -3,6 +3,7 @@ import {
   Layout,
   Listings,
   ProjectsHeading,
+  ResourcesFailedFetch,
   Seo,
 } from "@/components";
 import React, { useEffect, useState } from "react";
@@ -10,8 +11,9 @@ import { getProjects } from "../../../sanity/sanity.utils";
 import { ProjectProps } from "@/types/project.type";
 
 export default function Projects({ projects }: { projects: ProjectProps[] }) {
-  console.log(projects);
-
+  if (!projects) {
+    return <ResourcesFailedFetch resources="projects" />;
+  }
   return (
     <div>
       <Seo title="Projects" />

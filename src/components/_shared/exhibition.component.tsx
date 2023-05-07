@@ -1,4 +1,3 @@
-import { ExhibitionProps } from "@/types";
 import React, { useRef } from "react";
 import { CustomImage } from "./customImage.component";
 import {
@@ -7,9 +6,14 @@ import {
 } from "./exhibition.styles";
 import Link from "next/link";
 import { VisitLink } from "../icons";
-import { formatHeadline, useIsomorphicLayoutEffect } from "@/utils/helpers";
+import {
+  formatDate,
+  formatHeadline,
+  useIsomorphicLayoutEffect,
+} from "@/utils/helpers";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ExhibitionProps } from "@/types/exhibition.type";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,14 +21,12 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
   exhibition,
 }) => {
   const {
-    id,
-    location,
-    imageUrl,
-    venue,
-    year,
-    day,
-    month,
-    headline,
+    _id,
+    slug,
+    name,
+    image,
+
+    information: { city, venue, date },
     description,
     status,
   } = exhibition;
@@ -41,7 +43,7 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
           scrollTrigger: {
             trigger: exhibitionContainer.current,
             start: "top center+=100px",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
         })
         .to(exhibitionContainer.current, {
@@ -92,17 +94,20 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
     return () => ctx.revert();
   }, []);
 
+  console.log(new Date(date));
+  console.log(date.toLocaleString("en-US"));
+
   return (
     <SingleExhibitionWrap ref={exhibitionContainer}>
-      <CustomImage src={imageUrl} alt={headline} height={230} width={230} />
+      <CustomImage src={image} alt={name} height={230} width={230} />
 
       <SingleExhibitionTicketInfo>
-        <Link href={`/exhibitions/${id}`} className="content">
+        <Link href={`/exhibitions/${slug}`} className="content">
           <p className="location">
-            {location} <span className="dash"></span> {venue}{" "}
-            <span className="dash"></span> {year}
+            {city} <span className="dash"></span> {venue}{" "}
+            <span className="dash"></span> {formatDate(date).year}
           </p>
-          <h3 dangerouslySetInnerHTML={{ __html: formatHeadline(headline) }} />
+          <h3 dangerouslySetInnerHTML={{ __html: formatHeadline(name) }} />
           <p className="description">{description}</p>
         </Link>
         {status === "upcoming" ? (
@@ -116,8 +121,8 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
       </SingleExhibitionTicketInfo>
 
       <div className="date">
-        <span className="month">{month}</span>
-        <span className="day">{day}</span>
+        <span className="month"> {formatDate(date).month}</span>
+        <span className="day"> {formatDate(date).day}</span>
       </div>
     </SingleExhibitionWrap>
   );

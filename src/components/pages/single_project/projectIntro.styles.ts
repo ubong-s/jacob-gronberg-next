@@ -41,12 +41,13 @@ export const ProjectIntroWrap = styled.section`
   }
 
   ${mediaQueries.desktop} {
-    margin-top: -7rem;
+    /* margin-top: -7rem; */
 
     .return__link {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
+      display: none;
     }
 
     .content {

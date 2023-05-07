@@ -9,10 +9,11 @@ import { projects_data } from "@/constants";
 import { formatHeadline, useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ProjectProps } from "@/types/project.type";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const LatestWork = () => {
+export const LatestWork = ({ projects }: { projects: ProjectProps[] }) => {
   const latestWorkContainer = useRef(null);
   const projectRefs = useRef<any[]>([]);
 
@@ -23,8 +24,8 @@ export const LatestWork = () => {
         ease: "ease",
         scrollTrigger: {
           trigger: latestWorkContainer.current,
-          start: "top 50%",
-          toggleActions: "play none none reverse",
+          start: "top top+=80%",
+          toggleActions: "play none none none",
         },
       });
 
@@ -38,8 +39,8 @@ export const LatestWork = () => {
             scrollTrigger: {
               id: `project__${index}`,
               trigger: project,
-              start: "top 50%",
-              toggleActions: "play none none reverse",
+              start: "top center",
+              toggleActions: "play none none none",
             },
           })
           .to(project, {
@@ -83,17 +84,18 @@ export const LatestWork = () => {
     <LatestWorkWrap ref={latestWorkContainer}>
       <SectionHeading titleLeft="Latest" titleRight="Work" link="/projects" />
       <LatesWorkListingWrap>
-        {projects_data.slice(0, 4).map((project, index) => {
+        {projects.map((project, index) => {
           const {
-            id,
+            _id,
+            slug,
             name,
             coverImage,
             details: { location, month, year },
           } = project;
           return (
             <Project
-              href={`/projects/${id}`}
-              key={id}
+              href={`/projects/${slug}`}
+              key={_id}
               ref={addProjectToRefs}
               id={`project__${index}`}
             >

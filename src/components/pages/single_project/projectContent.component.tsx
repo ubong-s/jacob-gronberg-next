@@ -1,14 +1,13 @@
-import { CustomButton } from "@/components/_shared";
-import Link from "next/link";
 import {
   ProjectContentAbout,
   ProjectContentInformation,
   ProjectContentWrap,
 } from "./projectContent.styles";
-import { VisitLink } from "@/components/icons";
+import { PortableTextBlock } from "sanity";
+import { PortableText } from "@portabletext/react";
 
 interface ProjectContentProps {
-  description: string;
+  description: PortableTextBlock[];
   details: {
     year: number;
     service: string;
@@ -27,7 +26,7 @@ export const ProjectContent: React.FC<ProjectContentProps> = ({
         <ProjectContentAbout>
           <h2>About</h2>
 
-          <div dangerouslySetInnerHTML={{ __html: description }} />
+          <PortableText value={description} />
         </ProjectContentAbout>
 
         <ProjectContentInformation>

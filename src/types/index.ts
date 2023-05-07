@@ -19,38 +19,6 @@ export interface TestimonialProps {
   role: string;
 }
 
-export interface ExhibitionProps {
-  id: string;
-  imageUrl: string;
-  location: string;
-  venue: string;
-  year: number;
-  day: number;
-  month: string;
-  headline: string;
-  description: string;
-  fullDescription: string;
-  hours: string;
-  address: string;
-  status: "upcoming" | "completed";
-}
-
-export interface ProjectProps {
-  id: string;
-  name: string;
-  description: string;
-  details: {
-    year: number;
-    day: number;
-    month: string;
-    service: string;
-    client: string;
-    location: string;
-  };
-  coverImage: string;
-  gallery: string[];
-}
-
 export interface ExperienceProps {
   id: number;
   role: string;

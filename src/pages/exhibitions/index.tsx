@@ -11,10 +11,16 @@ import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
 import React, { useRef } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { getExhibitions } from "../../../sanity/sanity.utils";
+import { ExhibitionProps } from "@/types/exhibition.type";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Exhibitions() {
+export default function Exhibitions({
+  exhibitions,
+}: {
+  exhibitions: ExhibitionProps[];
+}) {
   const exhibitionRef = useRef(null);
 
   useIsomorphicLayoutEffect(() => {
@@ -44,12 +50,30 @@ export default function Exhibitions() {
       <Layout>
         <ExhibitionsHeading />
         <div ref={exhibitionRef}>
-          <CurrentExhibitions />
+          <CurrentExhibitions
+            exhibitions={exhibitions.filter(
+              (exhibition) => exhibition.status === "upcoming"
+            )}
+          />
           <Divider />
-          <PastExhibitions />
+          <PastExhibitions
+            exhibitions={exhibitions.filter(
+              (exhibition) => exhibition.status === "completed"
+            )}
+          />
         </div>
         <CallToAction />
       </Layout>
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  const data = await getExhibitions();
+
+  return {
+    props: {
+      exhibitions: data,
+    },
+  };
+};

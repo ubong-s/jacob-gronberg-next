@@ -67,8 +67,8 @@ export const Hero = () => {
 
           scrollTrigger: {
             trigger: ".cta__image",
-            start: "top center+=100px",
-            toggleActions: "play none none reverse",
+            start: "top top+=90%",
+            toggleActions: "play none none none",
           },
         })
         .from(".scroll__down", {

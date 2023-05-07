@@ -4,8 +4,13 @@ import { exhibitions_data } from "@/constants";
 import { ExhibitionsWrap } from "./exhibitions.styles";
 
 import { SectionHeading } from "../../_shared";
+import { ExhibitionProps } from "@/types/exhibition.type";
 
-export const ExhibitionsComponent = () => {
+export const ExhibitionsComponent = ({
+  exhibitions,
+}: {
+  exhibitions: ExhibitionProps[];
+}) => {
   return (
     <ExhibitionsWrap>
       <SectionHeading
@@ -14,11 +19,7 @@ export const ExhibitionsComponent = () => {
         link="/exhibitions"
       />
 
-      <ExhibitionsList
-        exhibitions={exhibitions_data.filter(
-          (exhibition) => exhibition.status === "upcoming"
-        )}
-      />
+      <ExhibitionsList exhibitions={exhibitions} />
     </ExhibitionsWrap>
   );
 };

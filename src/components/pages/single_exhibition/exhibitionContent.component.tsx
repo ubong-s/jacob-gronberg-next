@@ -8,8 +8,24 @@ import {
   TicketLinkMobile,
 } from "./exhibitionContent.styles";
 import { VisitLink } from "@/components/icons";
+import { PortableText } from "@portabletext/react";
+import { PortableTextBlock } from "sanity";
 
-export const ExhibitionContent = () => {
+export const ExhibitionContent = ({
+  fullDescription,
+  date,
+  venue,
+  address,
+  openingHours,
+  directions,
+}: {
+  fullDescription: PortableTextBlock[];
+  date: Date;
+  venue: string;
+  address: string;
+  openingHours: string;
+  directions: string;
+}) => {
   return (
     <ExhibitionContentWrap>
       <TicketLinkDesktop>
@@ -21,24 +37,7 @@ export const ExhibitionContent = () => {
         <ExhibitionContentAbout>
           <h2>About</h2>
 
-          <p>
-            Massa vitae tortor condimentum lacinia quis vel eros donec. In
-            fermentum et sollicitudin ac orci phasellus egestas tellus rutrum.
-            Congue nisi vitae suscipit tellus mauris a diam maecenas. Vestibulum
-            morbi blandit cursus risus at ultrices mi tempus imperdiet.
-          </p>
-          <p>
-            Sit amet aliquam id diam maecenas ultricies mi eget. Tortor id
-            aliquet lectus proin. Varius quam quisque id diam vel quam elementum
-            pulvinar.
-          </p>
-          <p>
-            Nisi porta lorem mollis aliquam ut. Pulvinar pellentesque habitant
-            morbi tristique senectus et netus et malesuada. Eget nullam non nisi
-            est sit amet facilisis magna etiam. Et tortor at risus viverra
-            adipiscing at in tellus integer. Mi sit amet mauris commodo quis
-            imperdiet massa.
-          </p>
+          <PortableText value={fullDescription} />
         </ExhibitionContentAbout>
 
         <ExhibitionContentInformation>
@@ -46,24 +45,24 @@ export const ExhibitionContent = () => {
           <ul>
             <li>
               <p>Date</p>
-              <p>16 Jun 2022 - 18 Oct 2022</p>
+              <p>{new Date(date).toString().substring(4, 15)}</p>
             </li>
             <li>
               <p>Opening Hours</p>
-              <p>Monday to Saturday from 11 pm to 6 pm</p>
+              <p>{openingHours}</p>
             </li>
             <li>
               <p>Location</p>
               <p className="location">
-                <span>Art Studio</span>
-                <Link href="#">
+                <span>{venue}</span>
+                <Link href={directions || "#"}>
                   Get Directions <VisitLink />
                 </Link>
               </p>
             </li>
             <li>
               <p>Address</p>
-              <p>Main Street 2, 12101 Berlin</p>
+              <p>{address}</p>
             </li>
           </ul>
         </ExhibitionContentInformation>

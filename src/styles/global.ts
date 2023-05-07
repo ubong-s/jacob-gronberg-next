@@ -220,6 +220,10 @@ const bodyStyles = css`
     width: 1.5rem;
     background-color: ${(props) => props.theme.colors.default};
   }
+
+  .sanity-app-no-js__root {
+    font-size: 16px !important;
+  }
 `;
 /* Body styles end */
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Exhibition } from "./exhibition.component";
 import { ExhibitionsListWrap } from "./exhibitionsList.styles";
-import { ExhibitionProps } from "@/types";
+import { ExhibitionProps } from "@/types/exhibition.type";
 
 export const ExhibitionsList: React.FC<{ exhibitions: ExhibitionProps[] }> = ({
   exhibitions,
@@ -9,7 +9,7 @@ export const ExhibitionsList: React.FC<{ exhibitions: ExhibitionProps[] }> = ({
   return (
     <ExhibitionsListWrap>
       {exhibitions.map((exhibition) => {
-        return <Exhibition key={exhibition.id} exhibition={exhibition} />;
+        return <Exhibition key={exhibition._id} exhibition={exhibition} />;
       })}
     </ExhibitionsListWrap>
   );

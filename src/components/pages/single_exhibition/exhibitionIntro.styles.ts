@@ -37,10 +37,10 @@ export const ExhibitionIntroWrap = styled.section`
   ${mediaQueries.desktop} {
     .return__link {
       top: 0;
+      display: none;
     }
 
     .content {
-      margin-top: -7rem;
     }
   }
 `;

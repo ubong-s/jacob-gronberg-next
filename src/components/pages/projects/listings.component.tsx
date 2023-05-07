@@ -5,10 +5,11 @@ import { CustomImage } from "../../_shared";
 import { formatHeadline, useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ProjectProps } from "@/types/project.type";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const Listings = () => {
+export const Listings = ({ projects }: { projects: ProjectProps[] }) => {
   const listingsContainer = useRef(null);
   const listingRefs = useRef<any[]>([]);
 
@@ -83,17 +84,18 @@ export const Listings = () => {
 
   return (
     <ListingsWrap ref={listingsContainer}>
-      {projects_data.map((project, index) => {
+      {projects.map((project, index) => {
         const {
-          id,
+          _id,
           name,
           coverImage,
+          slug,
           details: { location, month, year },
         } = project;
         return (
           <Listing
-            href={`/projects/${id}`}
-            key={id}
+            href={`/projects/${slug}`}
+            key={_id}
             ref={addListingToRefs}
             id={`listing__${index}`}
           >

@@ -22,7 +22,7 @@ export const Testimonials: React.FC<{}> = () => {
           scrollTrigger: {
             trigger: testimonialContainer.current,
             start: "top center+=100px",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
         })
         .to(testimonialContainer.current, {

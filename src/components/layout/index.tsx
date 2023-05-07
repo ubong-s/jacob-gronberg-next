@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Footer } from "./footer.component";
 import { Header } from "./header.component";
-import { mediaQueries } from "@/styles";
+import { GlobalStyle, mediaQueries } from "@/styles";
 
 const LayoutWrap = styled.div`
   main {
@@ -17,10 +17,13 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   return (
-    <LayoutWrap>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </LayoutWrap>
+    <>
+      <GlobalStyle />
+      <LayoutWrap>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </LayoutWrap>
+    </>
   );
 };

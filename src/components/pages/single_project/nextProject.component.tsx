@@ -2,9 +2,9 @@ import { CircularButton, CustomImage } from "@/components/_shared";
 import { NextProjectWrap } from "./nextProject.styles";
 
 interface NextProjectProps {
-  name: string;
-  image: string;
-  url: string;
+  name?: string;
+  image?: string;
+  url?: string;
 }
 
 export const NextProject: React.FC<NextProjectProps> = ({
@@ -12,6 +12,10 @@ export const NextProject: React.FC<NextProjectProps> = ({
   image,
   url,
 }) => {
+  if (!image || !name || !url) {
+    return null;
+  }
+
   return (
     <NextProjectWrap>
       <p>Next Project</p>

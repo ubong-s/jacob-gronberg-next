@@ -5,9 +5,14 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRef } from "react";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
+import { ExperienceProps } from "@/types/experience.type";
 gsap.registerPlugin(ScrollTrigger);
 
-export const Experiences = () => {
+export const Experiences = ({
+  experiences,
+}: {
+  experiences: ExperienceProps[];
+}) => {
   const experiencesContainer = useRef(null);
 
   useIsomorphicLayoutEffect(() => {
@@ -33,9 +38,9 @@ export const Experiences = () => {
     return () => ctx.revert();
   }, []);
 
-  const items = experiences_data.map((item) => {
+  const items = experiences.map((item) => {
     return {
-      id: item.id,
+      id: item._key,
       title: item.role,
       subtitle: item.company,
       rightText: item.timeline,

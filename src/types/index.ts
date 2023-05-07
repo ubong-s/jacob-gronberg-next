@@ -19,19 +19,6 @@ export interface TestimonialProps {
   role: string;
 }
 
-export interface ExperienceProps {
-  id: number;
-  role: string;
-  company: string;
-  timeline: string;
-}
-export interface RecognitionProps {
-  id: number;
-  award: string;
-  organisation: string;
-  date: string;
-}
-
 export interface ReturnLinkProps {
   returnLink?: string;
   returnText?: string;

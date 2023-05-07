@@ -6,7 +6,15 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export const AboutHero = () => {
+export const AboutHero = ({
+  firstName,
+  lastName,
+  image,
+}: {
+  firstName: string;
+  lastName: string;
+  image: string;
+}) => {
   const aboutContainer = useRef(null);
 
   useIsomorphicLayoutEffect(() => {
@@ -52,8 +60,8 @@ export const AboutHero = () => {
     <AboutHeroWrap ref={aboutContainer}>
       <div className="left__image">
         <CustomImage
-          src="/images/about_hero.png"
-          alt="about Jacob Grønberg"
+          src={image}
+          alt={`about ${firstName} ${lastName}`}
           width={700}
           height={700}
         />
@@ -61,8 +69,8 @@ export const AboutHero = () => {
       <div className="right__content">
         <h1>
           <span className="small__text">About</span>
-          <span>Jacob</span>
-          <span>Grønberg</span>
+          <span>{firstName}</span>
+          <span>{lastName}</span>
         </h1>
       </div>
     </AboutHeroWrap>

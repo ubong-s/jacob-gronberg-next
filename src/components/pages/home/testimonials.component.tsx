@@ -101,7 +101,7 @@ export const Testimonials: React.FC<{}> = () => {
           Worked with Over <span>50 clients</span> <br />
           around the world
         </p>
-        <Link href="/contact">
+        <Link href="mailto:ubongsly@gmail.com">
           <CustomButton text="Work with me" variant="default" />
         </Link>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { GenericListItemWrap } from "./genericListItem.styles";
 
 interface GenericListItemProps {
-  id: number;
+  id: string;
   title: string;
   subtitle: string;
   rightText: string;

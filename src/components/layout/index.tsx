@@ -52,21 +52,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({
     router.events.on("routeChangeError", () => {
       setRouteChangeActive(false);
     });
-
-    return () => {
-      router.events.on("routeChangeStart", () => {
-        setRouteChangeActive(true);
-      });
-      router.events.on("routeChangeComplete", () => {
-        setRouteChangeActive(false);
-      });
-      router.events.on("routeChangeError", () => {
-        setRouteChangeActive(false);
-      });
-    };
   }, [router.events]);
-
-  console.log(router);
 
   return (
     <LayoutWrap>

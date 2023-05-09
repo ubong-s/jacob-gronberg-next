@@ -10,7 +10,7 @@ export const HeaderWrap = styled.header`
   align-items: center;
   justify-content: space-between;
   height: 8rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   z-index: 10;
 
   ${mediaQueries.desktop} {
@@ -37,6 +37,18 @@ export const MenuButton = styled.button`
   outline: none;
   border: none;
   z-index: 10;
+
+  svg {
+    width: 4rem;
+    height: 2rem;
+  }
+
+  ${mediaQueries.desktop} {
+    svg {
+      width: 5.6rem;
+      height: 2.4rem;
+    }
+  }
 `;
 
 export const Menu = styled.div`

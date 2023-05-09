@@ -24,8 +24,13 @@ export const FooterCreditsWrap = styled.div`
   .credits {
     p {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      /* gap: 1rem; */
+
+      .dash {
+        display: none;
+      }
     }
 
     a {
@@ -40,6 +45,17 @@ export const FooterCreditsWrap = styled.div`
     justify-content: space-between;
     font-size: 1.6rem;
     margin-bottom: 3rem;
+
+    .credits {
+      p {
+        flex-direction: row;
+        gap: 1rem;
+
+        .dash {
+          display: initial;
+        }
+      }
+    }
 
     .social__list {
       gap: 3rem;

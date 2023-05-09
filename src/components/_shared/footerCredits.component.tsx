@@ -16,14 +16,19 @@ export const FooterCredits = () => {
       </ul>
       <div className="credits">
         <p>
-          © Design by
-          <Link href="http://www.gola.io" target="_blank">
-            Pawel Gola
-          </Link>
-          <span className="dash"></span>Developed by
-          <Link href="https://devubong.com/" target="_blank">
-            Ubong Sylvester
-          </Link>
+          <span>
+            © Design by{" "}
+            <Link href="http://www.gola.io" target="_blank">
+              Pawel Gola
+            </Link>
+          </span>
+          <span className="dash"></span>
+          <span>
+            Developed by{" "}
+            <Link href="https://devubong.com/" target="_blank">
+              Ubong Sylvester
+            </Link>
+          </span>
         </p>
       </div>
     </FooterCreditsWrap>

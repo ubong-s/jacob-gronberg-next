@@ -7,13 +7,11 @@ import { GlobalProvider } from "@/context/global";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  console.log(router);
 
   return (
     <ThemeProvider theme={myTheme}>
       <GlobalProvider>
-        {router.asPath === "/admin/[[...index]]" ||
-        router.asPath === "/admin" ? (
+        {router.asPath.startsWith("/admin") ? (
           <Component {...pageProps} />
         ) : (
           <>

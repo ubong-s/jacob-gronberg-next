@@ -92,6 +92,7 @@ export const HeroRight = styled.div`
     position: absolute;
     right: 20%;
     bottom: -7rem;
+    font-size: 1.2rem;
   }
 
   ${mediaQueries.tablet} {
@@ -105,6 +106,7 @@ export const HeroRight = styled.div`
     .scroll__down {
       bottom: -10rem;
       right: 20%;
+      font-size: 1.6rem;
     }
 
     img {

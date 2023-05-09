@@ -1,4 +1,3 @@
-import React from "react";
 import { FooterCredits } from "../_shared";
 import Link from "next/link";
 import { menu_list, info_list } from "@/constants";

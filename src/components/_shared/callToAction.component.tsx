@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { CircularButton } from "./circularButton.component";
 import { CallToActionWrap } from "./callToAction.styles";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
@@ -21,7 +21,6 @@ export const CallToAction: React.FC<{}> = () => {
           scrollTrigger: {
             trigger: container.current,
             start: "center center+=100px",
-            // toggleActions: "play none none none",
           },
         })
         .to(container.current, {

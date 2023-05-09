@@ -1,4 +1,3 @@
-import React from "react";
 import { Exhibition } from "./exhibition.component";
 import { ExhibitionsListWrap } from "./exhibitionsList.styles";
 import { ExhibitionProps } from "@/types/exhibition.type";

@@ -1,8 +1,8 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { MenuBars } from "../icons";
-import { menu_list, social_list } from "@/constants";
+import { menu_list } from "@/constants";
 import { HeaderWrap, Logo, Menu, MenuButton, MenuList } from "./header.styles";
 import gsap from "gsap";
 import { FooterCredits } from "../_shared";

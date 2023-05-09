@@ -1,5 +1,4 @@
 import { social_list } from "@/constants";
-
 import Link from "next/link";
 import { FooterCreditsWrap } from "./footerCredits.styles";
 

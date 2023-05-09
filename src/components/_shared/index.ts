@@ -9,7 +9,6 @@ export { CustomButton } from "./customButton.component";
 export { FooterCredits } from "./footerCredits.component";
 export { CustomImage } from "./customImage.component";
 export { CircularButton } from "./circularButton.component";
-export { Project } from "./project.component";
 export { Exhibition } from "./exhibition.component";
 export { ScrollDownButton } from "./scrollDownButton.component";
 export { ResourceNotFound } from "./resourceNotFound.component";

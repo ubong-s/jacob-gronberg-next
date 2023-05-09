@@ -6,7 +6,6 @@ import { keyframes } from "styled-components";
 export const HeaderWrap = styled.header`
   position: sticky;
   top: 0;
-  /* background-color: ${(props) => props.theme.colors.body}; */
   display: flex;
   align-items: center;
   justify-content: space-between;

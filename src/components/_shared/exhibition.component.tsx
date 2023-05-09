@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { CustomImage } from "./customImage.component";
 import {
   SingleExhibitionWrap,
@@ -43,7 +43,6 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
           scrollTrigger: {
             trigger: exhibitionContainer.current,
             start: "top center+=100px",
-            toggleActions: "play none none none",
           },
         })
         .to(exhibitionContainer.current, {

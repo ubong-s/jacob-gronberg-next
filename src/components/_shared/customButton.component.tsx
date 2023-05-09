@@ -1,4 +1,3 @@
-import React from "react";
 import { CustomButtonWrap } from "./customButton.styles";
 
 export interface CustomButtonProps {

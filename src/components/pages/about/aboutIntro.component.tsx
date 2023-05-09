@@ -1,6 +1,6 @@
+import { useRef } from "react";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { AboutSectionWrap } from "./index.styles";
-import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { PortableTextBlock } from "sanity";

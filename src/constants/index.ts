@@ -1,10 +1,4 @@
-import {
-  LinkProps,
-  ServiceProps,
-  TestimonialProps,
-  ExperienceProps,
-  RecognitionProps,
-} from "@/types";
+import { LinkProps, ServiceProps, TestimonialProps } from "@/types";
 
 export const menu_list: LinkProps[] = [
   {
@@ -385,7 +379,7 @@ export const projects_data = [
   },
 ];
 
-export const experiences_data: ExperienceProps[] = [
+export const experiences_data = [
   {
     id: 1,
     role: "Art Director",
@@ -412,7 +406,7 @@ export const experiences_data: ExperienceProps[] = [
   },
 ];
 
-export const recognitions_data: RecognitionProps[] = [
+export const recognitions_data = [
   {
     id: 1,
     award: "Photography Portfolio ",

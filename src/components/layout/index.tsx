@@ -64,7 +64,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({
         setRouteChangeActive(false);
       });
     };
-  }, []);
+  }, [router.events]);
 
   console.log(router);
 

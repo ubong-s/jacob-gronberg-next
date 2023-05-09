@@ -1,7 +1,10 @@
+import { projectId, apiVersion, dataset } from "../sanity.environment";
+
 const config = {
-  projectId: "idbcp5ww",
-  dataset: "production",
-  apiVersion: "2023-03-04",
+  projectId,
+  dataset,
+  apiVersion,
+  useCdn: true,
 };
 
 export default config;

@@ -19,6 +19,15 @@ export const ProjectIntroWrap = styled.section`
       position: relative;
       margin-top: -4rem;
       z-index: 1;
+
+      span {
+        display: block;
+
+        &.outer {
+          overflow: hidden;
+          padding-bottom: 2rem;
+        }
+      }
     }
 
     p {
@@ -41,13 +50,19 @@ export const ProjectIntroWrap = styled.section`
   }
 
   ${mediaQueries.desktop} {
-    /* margin-top: -7rem; */
-
     .return__link {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      display: none;
+      display: flex;
+      justify-content: center;
+      margin-top: -12rem;
+      margin-bottom: 12rem;
+      position: relative;
+      z-index: 12;
+      transition: opacity 0.2s ease;
+
+      &.menu__open {
+        visibility: hidden;
+        opacity: 0;
+      }
     }
 
     .content {

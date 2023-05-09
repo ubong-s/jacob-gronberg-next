@@ -142,7 +142,10 @@ export const Hero = () => {
             <p>Hi, Im Jacob</p>
           </div>
           <div className="btn__control">
-            <CircularButton link="/contact" title="Work With Me" />
+            <CircularButton
+              link="mailto:ubongsly@gmail.com"
+              title="Work With Me"
+            />
           </div>
         </HeroCTA>
       </HeroWrapInner>

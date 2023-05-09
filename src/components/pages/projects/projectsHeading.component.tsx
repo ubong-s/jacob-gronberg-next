@@ -48,7 +48,7 @@ export const ProjectsHeading = () => {
           repellat natus.
         </p>
       </div>
-      <CircularButton title="Get in touch" link="/contact" />
+      <CircularButton title="Get in touch" link="mailto:ubongsly@gmail.com" />
     </ProjectsHeadingWrap>
   );
 };

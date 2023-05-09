@@ -8,7 +8,6 @@ import {
   Testimonials,
 } from "@/components";
 import Head from "next/head";
-import Image from "next/image";
 import { getExhibitions, getProjects } from "../../sanity/sanity.utils";
 import { ExhibitionProps } from "@/types/exhibition.type";
 import { ProjectProps } from "@/types/project.type";

@@ -24,7 +24,8 @@ export const Logo = styled(Link)`
   text-transform: uppercase;
   color: ${(props) => props.theme.colors.default};
   position: relative;
-  z-index: 2;
+
+  z-index: 10;
 
   ${mediaQueries.desktop} {
     font-size: 2.4rem;
@@ -33,10 +34,10 @@ export const Logo = styled(Link)`
 
 export const MenuButton = styled.button`
   position: relative;
-  z-index: 2;
   background-color: transparent;
   outline: none;
   border: none;
+  z-index: 10;
 `;
 
 export const Menu = styled.div`
@@ -52,6 +53,7 @@ export const Menu = styled.div`
   z-index: 1;
   text-align: center;
   transform: translateY(-100%);
+  z-index: 9;
 
   .footer-wrap {
     padding: 0 4rem;

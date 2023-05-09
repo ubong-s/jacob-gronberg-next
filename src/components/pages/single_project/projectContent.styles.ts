@@ -8,6 +8,7 @@ export const ProjectContentWrap = styled.section`
   padding: 0 0 4rem;
   display: grid;
   gap: 3rem;
+  visibility: hidden;
 
   h2 {
     text-transform: uppercase;

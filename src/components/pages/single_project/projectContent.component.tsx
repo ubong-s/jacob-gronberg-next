@@ -5,6 +5,12 @@ import {
 } from "./projectContent.styles";
 import { PortableTextBlock } from "sanity";
 import { PortableText } from "@portabletext/react";
+import { useIsomorphicLayoutEffect } from "@/utils/helpers";
+import { useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface ProjectContentProps {
   description: PortableTextBlock[];
@@ -19,17 +25,50 @@ export const ProjectContent: React.FC<ProjectContentProps> = ({
   description,
   details,
 }) => {
+  const containerRef = useRef(null);
+
+  useIsomorphicLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap
+        .timeline({
+          defaults: { opacity: 0, ease: "ease" },
+          scrollTrigger: {
+            trigger: containerRef.current,
+            start: "top center",
+          },
+        })
+        .to(containerRef.current, {
+          autoAlpha: 1,
+        })
+        .from(".about", {
+          y: -50,
+        });
+
+      gsap.from(".information ul li", {
+        opacity: 0,
+        y: -20,
+        stagger: { amount: 1 },
+        scrollTrigger: {
+          trigger: ".information ul li",
+          start: "top center",
+        },
+      });
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <ProjectContentWrap>
+    <ProjectContentWrap ref={containerRef}>
       <div></div>
       <div>
-        <ProjectContentAbout>
+        <ProjectContentAbout className="about">
           <h2>About</h2>
 
           <PortableText value={description} />
         </ProjectContentAbout>
 
-        <ProjectContentInformation>
+        <ProjectContentInformation className="information">
           <ul>
             <li>
               <p>Year</p>

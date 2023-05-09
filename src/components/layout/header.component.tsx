@@ -6,10 +6,11 @@ import { menu_list, social_list } from "@/constants";
 import { HeaderWrap, Logo, Menu, MenuButton, MenuList } from "./header.styles";
 import gsap from "gsap";
 import { FooterCredits } from "../_shared";
+import { useGlobalContext } from "@/context/global";
 
 export const Header = () => {
   const menuRef = useRef(null);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const { menuOpen, setMenuOpen } = useGlobalContext();
   const router = useRouter();
 
   const animateHamburger = () => {

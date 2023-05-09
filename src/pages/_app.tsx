@@ -1,19 +1,25 @@
+import "@/styles/fonts.css";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle, myTheme } from "@/styles";
-import "@/styles/fonts.css";
-import { useEffect, useLayoutEffect } from "react";
+import { useRouter } from "next/router";
+import { GlobalProvider } from "@/context/global";
 
 export default function App({ Component, pageProps }: AppProps) {
-  useEffect(() => {
-    if (typeof window) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  }, []);
+  const router = useRouter();
 
   return (
     <ThemeProvider theme={myTheme}>
-      <Component {...pageProps} />
+      <GlobalProvider>
+        {router.asPath === "/admin" ? (
+          <Component {...pageProps} />
+        ) : (
+          <>
+            <GlobalStyle />
+            <Component {...pageProps} />
+          </>
+        )}
+      </GlobalProvider>
     </ThemeProvider>
   );
 }

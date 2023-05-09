@@ -2,6 +2,7 @@ import { mediaQueries } from "@/styles";
 import styled from "styled-components";
 
 export const AboutHeroWrap = styled.section`
+  position: relative;
   width: 90%;
   max-width: 142rem;
   margin: auto;
@@ -47,7 +48,7 @@ export const AboutHeroWrap = styled.section`
         position: absolute;
         right: 5%;
         top: 50%;
-        transform: translateY(-20%);
+        transform: translateY(-50%);
         line-height: 20rem;
 
         span {

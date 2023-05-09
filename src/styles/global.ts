@@ -184,7 +184,7 @@ const bodyStyles = css`
 
     ${mediaQueries.tablet} {
       font-size: 12rem;
-      line-height: 11rem;
+      line-height: 12rem;
     }
 
     ${mediaQueries.desktop} {

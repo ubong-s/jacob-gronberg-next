@@ -51,7 +51,7 @@ export const CallToAction: React.FC<{}> = () => {
         <span className="uppercase">{"Let's work"}</span>
         <span>Together</span>
       </h2>
-      <CircularButton title="Get in touch" link="/contact" />
+      <CircularButton title="Get in touch" link="mailto:ubongsly@gmail.com" />
     </CallToActionWrap>
   );
 };

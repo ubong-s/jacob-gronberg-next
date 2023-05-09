@@ -7,7 +7,6 @@ import {
   ResourceNotFound,
   Seo,
 } from "@/components";
-import { projects_data } from "@/constants";
 import { GetServerSidePropsContext } from "next";
 import { getProject } from "../../../sanity/sanity.utils";
 import { ProjectProps } from "@/types/project.type";

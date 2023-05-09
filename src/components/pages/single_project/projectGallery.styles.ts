@@ -10,6 +10,7 @@ export const ProjectGalleryWrap = styled.section`
   gap: 5rem;
   grid-template-columns: repeat(2, 1fr);
   padding: 5rem 0;
+  visibility: hidden;
 
   ${mediaQueries.desktop} {
     padding: 10rem 0;

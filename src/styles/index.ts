@@ -3,7 +3,6 @@ export { myTheme } from "./myTheme";
 export {
   colors,
   roundings,
-  spacing,
   typography,
   mediaQueries,
   dimensions,

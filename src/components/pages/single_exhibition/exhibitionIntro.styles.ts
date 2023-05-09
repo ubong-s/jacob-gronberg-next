@@ -7,20 +7,28 @@ export const ExhibitionIntroWrap = styled.section`
   max-width: 142rem;
   margin: auto;
   text-align: center;
+  visibility: hidden;
 
   .return__link {
-    position: absolute;
-    top: 2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
+    padding-top: 5rem;
   }
 
   .content {
-    padding: 5rem 0;
+    padding-bottom: 5rem;
+
     h1 {
       position: relative;
       margin-bottom: -6rem;
       z-index: 1;
+
+      span {
+        display: block;
+
+        &.outer {
+          overflow: hidden;
+          padding-bottom: 2rem;
+        }
+      }
     }
 
     p {
@@ -36,8 +44,18 @@ export const ExhibitionIntroWrap = styled.section`
 
   ${mediaQueries.desktop} {
     .return__link {
-      top: 0;
-      display: none;
+      display: flex;
+      justify-content: center;
+      margin-top: -12rem;
+      margin-bottom: 12rem;
+      position: relative;
+      z-index: 12;
+      transition: opacity 0.2s ease;
+
+      &.menu__open {
+        visibility: hidden;
+        opacity: 0;
+      }
     }
 
     .content {

@@ -1,14 +1,13 @@
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import schemas from "./sanity/schemas";
-import { projectId, dataset, apiVersion } from "./sanity/sanity.environment";
 
 const config = defineConfig({
   name: "default",
   title: "Jacob Gronberg",
-  projectId,
-  dataset,
-  apiVersion,
+  projectId: "idbcp5ww",
+  dataset: "production",
+  apiVersion: "2023-03-04",
   basePath: "/admin",
   plugins: [
     deskTool({

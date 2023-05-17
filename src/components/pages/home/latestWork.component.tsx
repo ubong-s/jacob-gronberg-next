@@ -24,8 +24,7 @@ export const LatestWork = ({ projects }: { projects: ProjectProps[] }) => {
         ease: "ease",
         scrollTrigger: {
           trigger: latestWorkContainer.current,
-          start: "top top+=80%",
-          toggleActions: "play none none none",
+          start: "top bottom",
         },
       });
 
@@ -39,8 +38,7 @@ export const LatestWork = ({ projects }: { projects: ProjectProps[] }) => {
             scrollTrigger: {
               id: `project__${index}`,
               trigger: project,
-              start: "top center",
-              toggleActions: "play none none none",
+              start: "top bottom",
             },
           })
           .to(project, {

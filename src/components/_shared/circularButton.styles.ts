@@ -15,6 +15,7 @@ export const CircularButtonLink = styled(Link)`
   border-radius: 50%;
   font-size: 1.8rem;
   text-align: center;
+  font-weight: 500;
 
   span {
     padding: 2rem;

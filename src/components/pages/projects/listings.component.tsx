@@ -20,8 +20,7 @@ export const Listings = ({ projects }: { projects: ProjectProps[] }) => {
         ease: "ease",
         scrollTrigger: {
           trigger: listingsContainer.current,
-          start: "top center+=100px",
-          toggleActions: "play none none none",
+          start: "top bottom",
         },
       });
 
@@ -36,7 +35,6 @@ export const Listings = ({ projects }: { projects: ProjectProps[] }) => {
               id: `listing__${index}`,
               trigger: listing,
               start: "top 50%",
-              toggleActions: "play none none none",
             },
           })
           .to(listing, {

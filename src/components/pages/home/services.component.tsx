@@ -21,8 +21,7 @@ export const Services = () => {
           },
           scrollTrigger: {
             trigger: servicesContainer.current,
-            start: "top 40%",
-            toggleActions: "play none none none",
+            start: "top bottom",
           },
         })
         .to(servicesContainer.current, {
@@ -42,8 +41,7 @@ export const Services = () => {
             scrollTrigger: {
               id: `service__${index}`,
               trigger: service,
-              start: "top center+=100px",
-              toggleActions: "play none none none",
+              start: "top bottom",
             },
           })
           .to(service, {

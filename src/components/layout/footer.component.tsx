@@ -23,7 +23,7 @@ export const Footer = () => {
             <p>Photographer & Visual Artist</p>
           </ColumnOne>
           <ColumnTwo className="column ">
-            <h4>Menu</h4>
+            <div className="column__title">Menu</div>
             <ul>
               {menu_list.map(({ id, title, link }) => (
                 <li key={id}>
@@ -38,7 +38,7 @@ export const Footer = () => {
             </ul>
           </ColumnTwo>
           <ColumnThree className="column ">
-            <h4>Info</h4>
+            <div className="column__title">Info</div>
             <ul>
               {info_list.map(({ id, title, link }) => (
                 <li key={id}>

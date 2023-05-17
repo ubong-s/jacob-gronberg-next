@@ -42,7 +42,7 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
           },
           scrollTrigger: {
             trigger: exhibitionContainer.current,
-            start: "top center+=100px",
+            start: "top bottom",
           },
         })
         .to(exhibitionContainer.current, {
@@ -92,9 +92,6 @@ export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
 
     return () => ctx.revert();
   }, []);
-
-  console.log(new Date(date));
-  console.log(date.toLocaleString("en-US"));
 
   return (
     <SingleExhibitionWrap ref={exhibitionContainer}>

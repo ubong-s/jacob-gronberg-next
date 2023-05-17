@@ -133,7 +133,8 @@ export const Header = () => {
   return (
     <HeaderWrap>
       <Logo href="/">Jacob Grønberg</Logo>
-      <MenuButton onClick={toggleMenu}>
+      <MenuButton onClick={toggleMenu} title="Mobile Menu Toggle">
+        <div className={menuOpen ? "circle active" : "circle"}></div>
         <MenuBars />
       </MenuButton>
       <Menu ref={menuRef}>

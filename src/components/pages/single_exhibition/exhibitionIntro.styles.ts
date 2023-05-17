@@ -51,6 +51,9 @@ export const ExhibitionIntroWrap = styled.section`
       position: relative;
       z-index: 12;
       transition: opacity 0.2s ease;
+      max-width: 50rem;
+      margin-left: auto;
+      margin-right: auto;
 
       &.menu__open {
         visibility: hidden;

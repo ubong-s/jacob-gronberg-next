@@ -22,7 +22,8 @@ export const FooterColumns = styled.div`
 
   .column {
     margin-bottom: 4rem;
-    h4 {
+
+    &__title {
       text-transform: uppercase;
       color: ${(props) => props.theme.colors.primary};
       font-size: 2rem;
@@ -50,7 +51,7 @@ export const FooterColumns = styled.div`
     padding: 0 8rem 4rem;
 
     .column {
-      h4 {
+      &__title {
         font-size: 3rem;
         margin-bottom: 5rem;
       }

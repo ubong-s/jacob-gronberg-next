@@ -26,8 +26,7 @@ export const Experiences = ({
 
           scrollTrigger: {
             trigger: experiencesContainer.current,
-            start: "top center+=100px",
-            toggleActions: "play none none none",
+            start: "top bottom",
           },
         })
         .to(experiencesContainer.current, {

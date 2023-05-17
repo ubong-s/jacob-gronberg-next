@@ -28,8 +28,7 @@ export const SectionHeading = ({
           },
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top center+=100px",
-            toggleActions: "play none none reverse",
+            start: "top bottom",
           },
         })
         .from("h2 span", {

@@ -21,13 +21,7 @@ const LayoutWrapInner = styled.div<{ routeChangeActive: boolean }>`
     }
   }
 
-  ${(props) =>
-    props.routeChangeActive &&
-    css`
-      height: 100vh;
-      overflow: clip;
-      opacity: 0;
-    `}
+  ${(props) => props.routeChangeActive && css``}
 `;
 
 export const Layout: React.FC<{ children: React.ReactNode }> = ({

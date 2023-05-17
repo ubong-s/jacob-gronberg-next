@@ -38,6 +38,21 @@ export const MenuButton = styled.button`
   border: none;
   z-index: 10;
 
+  .circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid ${(props) => props.theme.colors.primary};
+    border-radius: 50%;
+    top: -40px;
+    right: -40px;
+    visibility: hidden;
+
+    &.active {
+      visibility: visible;
+    }
+  }
+
   svg {
     width: 4rem;
     height: 2rem;
@@ -47,6 +62,17 @@ export const MenuButton = styled.button`
     svg {
       width: 5.6rem;
       height: 2.4rem;
+    }
+
+    .circle {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 1px solid ${(props) => props.theme.colors.primary};
+      border-radius: 50%;
+      top: -105px;
+      right: -105px;
+      visibility: hidden;
     }
   }
 `;

@@ -21,8 +21,7 @@ export const AboutIntro = ({ about }: { about: PortableTextBlock[] }) => {
 
           scrollTrigger: {
             trigger: aboutIntroContainer.current,
-            start: "top center+=100px",
-            toggleActions: "play none none none",
+            start: "top bottom",
           },
         })
         .to(aboutIntroContainer.current, {

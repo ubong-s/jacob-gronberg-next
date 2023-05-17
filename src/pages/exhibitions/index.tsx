@@ -35,8 +35,7 @@ export default function Exhibitions({
           y: 20,
           scrollTrigger: {
             trigger: element,
-            start: "top center+=100px",
-            toggleActions: "play none none reverse",
+            start: "top bottom",
           },
         });
       });

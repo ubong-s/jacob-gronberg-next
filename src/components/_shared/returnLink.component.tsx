@@ -10,6 +10,10 @@ const ReturnLinkWrap = styled(Link)`
 `;
 
 export const ReturnLink = ({ returnLink, returnText }: ReturnLinkProps) => {
+  if (!returnLink || !returnText) {
+    return null;
+  }
+
   return (
     <>
       {returnLink && returnText ? (

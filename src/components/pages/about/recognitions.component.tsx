@@ -26,8 +26,7 @@ export const Recognitions = ({
 
           scrollTrigger: {
             trigger: recognitionsContainer.current,
-            start: "top center+=100px",
-            toggleActions: "play none none none",
+            start: "top bottom",
           },
         })
         .to(recognitionsContainer.current, {

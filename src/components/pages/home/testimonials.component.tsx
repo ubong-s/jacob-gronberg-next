@@ -21,8 +21,7 @@ export const Testimonials: React.FC<{}> = () => {
           },
           scrollTrigger: {
             trigger: testimonialContainer.current,
-            start: "top center+=100px",
-            toggleActions: "play none none none",
+            start: "top bottom",
           },
         })
         .to(testimonialContainer.current, {
@@ -51,8 +50,7 @@ export const Testimonials: React.FC<{}> = () => {
             scrollTrigger: {
               id: `testimonial__${index}`,
               trigger: element,
-              start: "top center+=100px",
-              toggleActions: "play none none reverse",
+              start: "top bottom",
             },
           })
           .to(element, { autoAlpha: 1 })

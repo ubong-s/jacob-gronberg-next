@@ -7,10 +7,7 @@ export const PageLoader = ({
 }) => {
   return (
     <PageLoaderWrap className={routeChangeActive ? "route__change" : ""}>
-      <p>
-        <span>Jacob</span>
-        <span>Grønberg</span>
-      </p>
+      <p>Jacob Grønberg</p>
     </PageLoaderWrap>
   );
 };

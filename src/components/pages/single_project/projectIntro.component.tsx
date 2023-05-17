@@ -47,7 +47,6 @@ export const ProjectIntro: React.FC<ProjectIntroProps> = ({ name, image }) => {
         scrollTrigger: {
           trigger: ".content h1",
           start: "top center",
-          toggleActions: "play none none none",
         },
       });
     }, containerRef);

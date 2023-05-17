@@ -1,3 +1,4 @@
+import { mediaQueries } from "@/styles";
 import styled, { keyframes } from "styled-components";
 
 const Thumper = keyframes`
@@ -11,25 +12,23 @@ const Thumper = keyframes`
 
 export const PageLoaderWrap = styled.div`
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 3rem;
+  bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  padding: 2rem;
   overflow: hidden;
-  background-color: ${(props) => props.theme.colors.body};
   z-index: -1000;
   transform: scale(0);
   opacity: 0;
   transition: all 0.5s ease-out;
+  display: none;
 
   p {
     text-transform: uppercase;
-    text-align: center;
     color: ${(props) => props.theme.colors.primary};
-    font-size: 3rem;
+    font-size: 2rem;
 
     span {
       display: block;
@@ -45,5 +44,9 @@ export const PageLoaderWrap = styled.div`
     p {
       animation: ${Thumper} 0.5s infinite alternate;
     }
+  }
+
+  ${mediaQueries.desktop} {
+    display: flex;
   }
 `;

@@ -48,7 +48,7 @@ export const SingleExhibitionWrap = styled.div`
 
   ${mediaQueries.desktop} {
     gap: 10rem;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 25rem 1fr auto;
     align-items: center;
 
     .date {

@@ -133,7 +133,6 @@ const resetCss = css`
 /* HTML styles start */
 const htmlStyles = css`
   font-size: 10px;
-  scroll-behavior: smooth !important;
 
   * {
     transform-origin: center center;

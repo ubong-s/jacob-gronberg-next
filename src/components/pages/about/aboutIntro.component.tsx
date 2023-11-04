@@ -2,10 +2,9 @@ import { useRef } from "react";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { AboutSectionWrap } from "./index.styles";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 import { PortableTextBlock } from "sanity";
 import { PortableText } from "@portabletext/react";
-gsap.registerPlugin(ScrollTrigger);
 
 export const AboutIntro = ({ about }: { about: PortableTextBlock[] }) => {
   const aboutIntroContainer = useRef(null);

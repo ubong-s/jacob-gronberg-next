@@ -3,9 +3,6 @@ import React, { useRef } from "react";
 import { Service, ServicesList, ServicesWrap } from "./services.styles";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const Services = () => {
   const servicesContainer = useRef(null);

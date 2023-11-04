@@ -4,6 +4,10 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle, myTheme } from "@/styles";
 import { useRouter } from "next/router";
 import { GlobalProvider } from "@/context/global";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();

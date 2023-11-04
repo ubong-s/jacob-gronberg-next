@@ -3,9 +3,6 @@ import { ScrollDownButton } from "../../_shared";
 import { ExhibitionsHeadingWrap } from "./exhibitionsHeading.styles";
 import { useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const ExhibitionsHeading = () => {
   const container = useRef(null);

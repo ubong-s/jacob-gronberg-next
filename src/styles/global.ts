@@ -107,6 +107,8 @@ const resetCss = css`
   }
   body {
     line-height: 1;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   ol,
   ul {

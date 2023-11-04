@@ -4,9 +4,6 @@ import { useGlobalContext } from "@/context/global";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 interface ProjectIntroProps {
   name: string;

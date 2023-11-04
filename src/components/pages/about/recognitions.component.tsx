@@ -2,11 +2,10 @@ import { GenericListItem } from "@/components/_shared";
 import { recognitions_data } from "@/constants";
 import { AboutSectionWrap } from "./index.styles";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 import { useRef } from "react";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { RecognitionProps } from "@/types/recognition.type";
-gsap.registerPlugin(ScrollTrigger);
 
 export const Recognitions = ({
   recognitions,

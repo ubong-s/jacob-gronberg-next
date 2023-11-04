@@ -12,10 +12,8 @@ import {
   useIsomorphicLayoutEffect,
 } from "@/utils/helpers";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { ExhibitionProps } from "@/types/exhibition.type";
 
-gsap.registerPlugin(ScrollTrigger);
+import { ExhibitionProps } from "@/types/exhibition.type";
 
 export const Exhibition: React.FC<{ exhibition: ExhibitionProps }> = ({
   exhibition,

@@ -3,9 +3,6 @@ import { ProjectsHeadingWrap } from "./ProjectsHeading.styles";
 import { CircularButton } from "../../_shared";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const ProjectsHeading = () => {
   const container = useRef(null);

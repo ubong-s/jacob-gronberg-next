@@ -4,10 +4,8 @@ import { Listing, ListingsWrap } from "./listings.styles";
 import { CustomImage } from "../../_shared";
 import { formatHeadline, useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { ProjectProps } from "@/types/project.type";
 
-gsap.registerPlugin(ScrollTrigger);
+import { ProjectProps } from "@/types/project.type";
 
 export const Listings = ({ projects }: { projects: ProjectProps[] }) => {
   const listingsContainer = useRef(null);
@@ -34,7 +32,7 @@ export const Listings = ({ projects }: { projects: ProjectProps[] }) => {
             scrollTrigger: {
               id: `listing__${index}`,
               trigger: listing,
-              start: "top 50%",
+              start: "top bottom",
             },
           })
           .to(listing, {

@@ -71,14 +71,16 @@ export const SingleExhibitionTicketInfo = styled.div`
 
   .location {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
+    line-height: 1rem;
   }
 
   h3 {
     text-transform: uppercase;
     color: ${(props) => props.theme.colors.default};
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin: 2rem 0;
 
     span {

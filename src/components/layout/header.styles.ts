@@ -12,6 +12,7 @@ export const HeaderWrap = styled.header`
   height: 8rem;
   padding: 0 1rem;
   z-index: 10;
+  overflow-x: hidden;
 
   ${mediaQueries.desktop} {
     height: 12.5rem;
@@ -40,8 +41,8 @@ export const MenuButton = styled.button`
 
   .circle {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border: 1px solid ${(props) => props.theme.colors.primary};
     border-radius: 50%;
     top: -40px;

@@ -4,9 +4,6 @@ import { ProjectGalleryWrap, ProjectImage } from "./projectGallery.styles";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const ProjectGallery: React.FC<{ name: string; gallery: string[] }> = ({
   name,

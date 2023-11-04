@@ -11,11 +11,9 @@ import {
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
 import React, { useRef } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 import { getExhibitions } from "../../../sanity/sanity.utils";
 import { ExhibitionProps } from "@/types/exhibition.type";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Exhibitions({
   exhibitions,

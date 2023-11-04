@@ -65,8 +65,8 @@ export const TestimonialsWrap = styled.section`
 
 export const Testimonial = styled.div`
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 4rem;
+  grid-template-columns: 100px 1fr;
+  gap: 3rem;
   padding: 5rem 0;
   border-bottom: 1px solid ${(props) => props.theme.colors.muted};
   visibility: hidden;
@@ -95,10 +95,14 @@ export const Testimonial = styled.div`
   .name__role {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    line-height: 1rem;
     gap: 1rem;
   }
 
   ${mediaQueries.desktop} {
+    gap: 4rem;
+
     &:first-of-type {
       padding-top: 0;
     }

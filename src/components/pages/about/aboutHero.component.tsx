@@ -3,8 +3,6 @@ import { AboutHeroWrap } from "./aboutHero.styles";
 import { CustomImage } from "@/components/_shared";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 export const AboutHero = ({
   firstName,

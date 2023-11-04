@@ -3,9 +3,6 @@ import { CircularButton } from "./circularButton.component";
 import { CallToActionWrap } from "./callToAction.styles";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const CallToAction: React.FC<{}> = () => {
   const container = useRef(null);
@@ -16,11 +13,11 @@ export const CallToAction: React.FC<{}> = () => {
         .timeline({
           defaults: {
             opacity: 0,
-            ease: "ease",
+            ease: "none",
           },
           scrollTrigger: {
             trigger: container.current,
-            start: "center center+=100px",
+            start: "top bottom",
           },
         })
         .to(container.current, {

@@ -8,10 +8,8 @@ import {
 import { projects_data } from "@/constants";
 import { formatHeadline, useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { ProjectProps } from "@/types/project.type";
 
-gsap.registerPlugin(ScrollTrigger);
+import { ProjectProps } from "@/types/project.type";
 
 export const LatestWork = ({ projects }: { projects: ProjectProps[] }) => {
   const latestWorkContainer = useRef(null);

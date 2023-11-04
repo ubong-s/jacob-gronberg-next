@@ -14,8 +14,8 @@ export const CallToActionWrap = styled.section`
   visibility: hidden;
 
   h2 {
-    line-height: 8rem;
-    font-size: 8rem;
+    line-height: 7rem;
+    font-size: 7rem;
     text-align: center;
     overflow-y: hidden;
 

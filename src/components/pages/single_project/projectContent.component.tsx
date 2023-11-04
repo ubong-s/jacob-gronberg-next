@@ -8,9 +8,6 @@ import { PortableText } from "@portabletext/react";
 import { useIsomorphicLayoutEffect } from "@/utils/helpers";
 import { useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 interface ProjectContentProps {
   description: PortableTextBlock[];

@@ -12,7 +12,7 @@ export const HeaderWrap = styled.header`
   height: 8rem;
   padding: 0 1rem;
   z-index: 10;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
   ${mediaQueries.desktop} {
     height: 12.5rem;

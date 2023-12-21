@@ -30,7 +30,7 @@ export const Testimonials: React.FC<{}> = () => {
         .from(".intro h2", {
           y: 20,
         })
-        .from(".intro h2 sapn", {
+        .from(".intro h2 span", {
           y: 20,
         })
         .from(".intro p", {
